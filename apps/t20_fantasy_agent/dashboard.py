@@ -1,10 +1,15 @@
 import sys
+import importlib.util
 from pathlib import Path
 import pandas as pd
 import streamlit as st
 
-# adds this file's folder to Python's search path so data_layer.py can be found
-sys.path.insert(0, str(Path(__file__).parent))
+# load data_layer by absolute path — reliable on Python 3.14 / Streamlit Cloud
+_dl_path = Path(__file__).parent / "data_layer.py"
+_dl_spec = importlib.util.spec_from_file_location("data_layer", _dl_path)
+_dl_mod  = importlib.util.module_from_spec(_dl_spec)
+sys.modules["data_layer"] = _dl_mod
+_dl_spec.loader.exec_module(_dl_mod)
 from data_layer import get_standings, get_round_summary, FANTASY_SQUAD_CSV, PLAYER_STATS_CSV, API_AUDIT_PATH
 
 # browser tab title, icon, and use full page width
