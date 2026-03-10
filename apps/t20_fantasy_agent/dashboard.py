@@ -91,7 +91,7 @@ with tab_group:
     mw_rows = squad_group_round_df[squad_group_round_df["chip_matchwinner"] == 1]
     if not mw_rows.empty:
         mw = mw_rows.iloc[0]
-        active_chips.append(f"🏆 Match Winner: {mw['player_name']} ({int(mw['counted_points'])} pts)")
+        active_chips.append(f"🏆 Match Winner: {mw['player_name']} ({int(mw['fantasy_points_final'])} pts)")
 
     converted = squad_group_round_df[squad_group_round_df["chip_converter"] == 1]["player_name"].tolist()
     if converted:
