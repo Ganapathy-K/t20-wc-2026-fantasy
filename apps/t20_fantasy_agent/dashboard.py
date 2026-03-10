@@ -4,13 +4,19 @@ from pathlib import Path
 import pandas as pd
 import streamlit as st
 
-# load data_layer by absolute path — reliable on Python 3.14 / Streamlit Cloud
+# load data_layer by absolute path — execute first, then register (Python 3.14 safe)
+sys.modules.pop("data_layer", None)
 _dl_path = Path(__file__).parent / "data_layer.py"
 _dl_spec = importlib.util.spec_from_file_location("data_layer", _dl_path)
 _dl_mod  = importlib.util.module_from_spec(_dl_spec)
+_dl_spec.loader.exec_module(_dl_mod)   # execute before registering
 sys.modules["data_layer"] = _dl_mod
-_dl_spec.loader.exec_module(_dl_mod)
-from data_layer import get_standings, get_round_summary, FANTASY_SQUAD_CSV, PLAYER_STATS_CSV, API_AUDIT_PATH
+
+get_standings     = _dl_mod.get_standings
+get_round_summary = _dl_mod.get_round_summary
+FANTASY_SQUAD_CSV = _dl_mod.FANTASY_SQUAD_CSV
+PLAYER_STATS_CSV  = _dl_mod.PLAYER_STATS_CSV
+API_AUDIT_PATH    = _dl_mod.API_AUDIT_PATH
 
 # browser tab title, icon, and use full page width
 st.set_page_config(page_title="T20 WC 2026 Fantasy", page_icon="🏏", layout="wide")
