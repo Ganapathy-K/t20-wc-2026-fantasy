@@ -71,12 +71,17 @@ with tab_group:
 
     # chips + autosub captions shown above the tables
     chip_map = {
-        "chip_best11":      "⭐ Best 11",
-        "chip_flexicap":    "🧢 Flexi Cap",
-        "chip_matchwinner": "🏆 Match Winner",
-        "chip_converter":   "🔀 Converter",
+        "chip_best11":   "⭐ Best 11",
+        "chip_flexicap": "🧢 Flexi Cap",
     }
-    active_chips = [label for col, label in chip_map.items() if col != "chip_converter" and squad_group_round_df[col].any()]
+    active_chips = [label for col, label in chip_map.items() if squad_group_round_df[col].any()]
+
+    # matchwinner: show player + counted points (potm_bonus not tracked in JSON pipeline)
+    mw_rows = squad_group_round_df[squad_group_round_df["chip_matchwinner"] == 1]
+    if not mw_rows.empty:
+        mw = mw_rows.iloc[0]
+        active_chips.append(f"🏆 Match Winner: {mw['player_name']} ({int(mw['counted_points'])} pts)")
+
     converted = squad_group_round_df[squad_group_round_df["chip_converter"] == 1]["player_name"].tolist()
     if converted:
         active_chips.append(f"🔀 Converter: {', '.join(converted)}")
