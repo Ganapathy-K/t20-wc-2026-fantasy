@@ -1,6 +1,7 @@
 pandas
 openpyxl
 rapidfuzz
-streamlit
+streamlit>=1.35.0
+altair>=5,<6
 google-generativeai
 python-dotenv
