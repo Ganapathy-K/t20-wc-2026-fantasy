@@ -195,7 +195,7 @@ def apply_captain_vice(df): # Captain/vice-captain
     out["final_points"] = out["fantasy_points_final"] * out["points_multiplier"]
     return out
 
-def apply_converter(df): #Converter chip
+def apply_converter(df):  # Converter chip
     # Permanent role conversion from the trigger round onward per participant + player.
     if "chip_converter" not in df.columns or "role_override" not in df.columns:
         return df
@@ -323,14 +323,14 @@ def apply_matchwinner(df): # Matchwinner chip
 
 
 # STEP 1 - Load match data (player performance per match)
-match_8teams_df = pd.read_csv(BATCH_CSV_PATH)  # read match CSV into DataFrame
+match_all_teams_df = pd.read_csv(BATCH_CSV_PATH)  # read match CSV into DataFrame
 
 # DROP "match_date_x", "match_label_x", rename "match_date_y", "match_label_y" as "match_date", "match_label"
-match_8teams_df = match_8teams_df.drop(columns=["match_date_x", "match_label_x"], errors="ignore")
-match_8teams_df = match_8teams_df.rename(columns={"team_code": "team", "nation_code": "team_code", "match_date_y": "match_date", "match_label_y": "match_label"})
-match_8teams_df['match_id'] = match_8teams_df['match_id'].astype('str')
-match_8teams_df["team_round_source"] = pd.to_numeric(match_8teams_df.get("team_round"), errors="coerce")
-match_8teams_df = match_8teams_df.drop(columns=["team_round"], errors="ignore")
+match_all_teams_df = match_all_teams_df.drop(columns=["match_date_x", "match_label_x"], errors="ignore")
+match_all_teams_df = match_all_teams_df.rename(columns={"team_code": "team", "nation_code": "team_code", "match_date_y": "match_date", "match_label_y": "match_label"})
+match_all_teams_df['match_id'] = match_all_teams_df['match_id'].astype('str')
+match_all_teams_df["team_round_source"] = pd.to_numeric(match_all_teams_df.get("team_round"), errors="coerce")
+match_all_teams_df = match_all_teams_df.drop(columns=["team_round"], errors="ignore")
 
 # Insert AFG player points
 afg_match_df_raw = pd.read_excel(EXCEL_WORKBOOK_PATH, sheet_name="AFG Player Points")  # read squad sheet from Excel
@@ -367,9 +367,9 @@ afg_match_df_raw["match_id"] = afg_match_df_raw["match_id"].astype(str)
 
 afg_round_source = pd.to_numeric(afg_match_df_raw.get("team_round"), errors="coerce") if "team_round" in afg_match_df_raw.columns else pd.Series(pd.NA, index=afg_match_df_raw.index)
 afg_match_df = afg_match_df_raw.drop(columns=["team_round"], errors="ignore")
-afg_match_df = afg_match_df.reindex(columns=match_8teams_df.columns)
+afg_match_df = afg_match_df.reindex(columns=match_all_teams_df.columns)
 afg_match_df["team_round_source"] = afg_round_source
-match_df = pd.concat([match_8teams_df, afg_match_df], ignore_index=True)
+match_df = pd.concat([match_all_teams_df, afg_match_df], ignore_index=True)
 match_df["match_date"] = pd.to_datetime(match_df["match_date"]).dt.date
 logger.info("AFG player points loaded")
 logger.debug("AFG sample:\n%s", afg_match_df.head(3))
@@ -408,7 +408,6 @@ schedule_teams_long_df = (
         value_name="team_name_full",
     )[["match_id", "match_date", "team_name_full"]]
 )
-schedule_teams_long_df["team_code"] = schedule_teams_long_df["team_name_full"].map(team_name_to_code)
 schedule_teams_long_df["team_code"] = schedule_teams_long_df["team_name_full"].map(lambda x: team_name_to_code.get(norm_team_name(x)))
 
 coverage = schedule_teams_long_df["team_code"].notna().mean()
@@ -511,11 +510,9 @@ match_df["team_round"] = pd.to_numeric(match_df["team_round"], errors="coerce").
 match_df["team_round"] = match_df["team_round"].astype("Int64")
 match_df = match_df.drop(columns=["team_round_source"], errors="ignore")
 
-match_df.columns = match_df.columns.str.strip()  # clean column names (remove spaces)
-match_df["player"] = match_df["canonical_player_name"].astype(str).str.strip().str.lower()  # standardize player names for matching
-if "team_code" not in match_df.columns:
-    match_df["team_code"] = match_df["team_code"] # assign team_code to team_code
-match_df["team_code"] = match_df["team_code"].astype(str).str.strip().str.upper() # standardize team codes for matching
+match_df.columns = match_df.columns.str.strip()
+match_df["player"] = match_df["canonical_player_name"].astype(str).str.strip().str.lower()
+match_df["team_code"] = match_df["team_code"].astype(str).str.strip().str.upper()
 
 logger.info("Player points dataframe prepared")
 logger.debug("Player points sample:\n%s", match_df.sample(2))
@@ -536,14 +533,8 @@ join_columns = ["player"]
 df2_unique_columns.extend(join_columns)
 left_join_columns = ["player", "effective_position", "round"]
 right_join_columns = ["player", "role", "team_round"]
-# print(df2_unique_columns)
-# print(df1.columns)
 
-participants_match_df = pd.merge(df1, df2[df2_unique_columns], left_on = left_join_columns, right_on = right_join_columns, how = "left")
-# print("df1 columns:")
-# print(df1.columns)
-# print("df2 columns:")
-# print(df2_unique_columns)
+participants_match_df = pd.merge(df1, df2[df2_unique_columns], left_on=left_join_columns, right_on=right_join_columns, how="left")
 
 # STEP 4 - Fill missing values
 participants_match_df["fantasy_points_final"] = participants_match_df["fantasy_points_final"].fillna(0)
@@ -607,9 +598,6 @@ try:
 except Exception as e:
     participants_match_df["potm_bonus"] = 0
     logger.warning("Unable to apply POTM bonus from Match Schedule sheet: %s", e)
-logger.info("team_round_df columns: %s", team_round_df.columns.tolist())
-logger.info("participants_match_df columns: %s", participants_match_df.columns.tolist())
-# print(f"Participant - points combined data:")
 logger.debug("participants_match_df head:\n%s", participants_match_df.head())
 
 # STEP 6 - Orchestrating autosub and chips

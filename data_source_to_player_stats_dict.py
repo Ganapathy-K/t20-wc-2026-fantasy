@@ -2,6 +2,10 @@ import json
 
 from pipeline_utils import get_delivery_info_from_wrapper, is_legal_delivery_bool_from_delivery
 
+# Dismissal kinds that credit the bowler with a wicket (whitelist approach).
+# "retired hurt" and "run out" are intentionally excluded.
+BOWLER_WICKET_KINDS = {"bowled", "caught", "lbw", "stumped", "hit wicket", "caught and bowled"}
+
 # empty player stats builder block
 def build_empty_player_match_stats():
     return {
@@ -101,8 +105,6 @@ def extract_player_match_stats(match_file_path_str):
                 bowler_stats_dict["runs_conceded_by_bowler"] += runs_conceded
 
                 # wicket and fielding block
-                # whitelist: only these count as the bowler's wicket
-                BOWLER_WICKET_KINDS = {"bowled", "caught", "lbw", "stumped", "hit wicket", "caught and bowled"}
                 if "wickets" in delivery_info_dict:
                     for wicket_dict in delivery_info_dict["wickets"]:
                         dismissal_kind_str = wicket_dict["kind"]
@@ -161,7 +163,6 @@ def extract_player_match_stats(match_file_path_str):
     return player_name_to_stats_dict
 
 if __name__ == "__main__":
-    # test_match_file_path_str = r"D:\Data Science\Visual Studio Code\1473511.json"
     test_match_file_path_str = r"D:/Data Science/Visual Studio Code/icc_mens_t20_wc_2026_matchlogs_json/1512721.json"
     player_name_to_stats_dict = extract_player_match_stats(test_match_file_path_str)
     print("Players extracted:", len(player_name_to_stats_dict))

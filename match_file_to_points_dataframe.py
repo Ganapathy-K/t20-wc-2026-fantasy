@@ -5,23 +5,6 @@ from data_source_to_player_stats_dict import extract_player_match_stats
 from scoring_engine_functions import compute_player_match_fantasy_points_with_breakdown
 from build_player_name_mapping_from_sources import build_player_name_mapping_dataframe
 
-def apply_potm_bonus(match_points_dataframe, master_excel_path_str, match_id_str, potm_bonus_int=50):
-
-    potm_df = pd.read_excel(master_excel_path_str, sheet_name="POTM")
-    potm_row = potm_df.loc[potm_df["match_id"] == match_id_str]
-
-    if potm_row.empty:
-        return match_points_dataframe
-
-    potm_name = potm_row.iloc[0]["potm"]
-
-    mask = match_points_dataframe["player_name_str"] == potm_name
-    match_points_dataframe.loc[mask, "fantasy_points_int"] += potm_bonus_int
-    match_points_dataframe.loc[mask, "potm_bonus_int"] = potm_bonus_int
-
-    return match_points_dataframe
-
-
 # dataframe build from match source block
 def build_match_points_dataframe_from_data_source(match_file_path_str, master_excel_path_str, debug_bool=True):
 
@@ -151,15 +134,6 @@ if __name__ == "__main__":
     master_excel_path_str = EXCEL_WORKBOOK_PATH
 
     df = build_match_points_dataframe_from_data_source(match_file_path_str, master_excel_path_str, debug_bool=True)
-    
-    # atomic sum validator
-    atomic_cols = [c for c in df.columns if c.endswith("_points_int") and c not in (
-        "batting_points_int", "bowling_points_int", "fielding_points_int", "base_total_points_int", "final_total_points_int"
-    )]
-    # df["atomic_sum_check"] = df[atomic_cols].sum(axis=1)
-    # print(df[["canonical_player_name", "base_total_points_int", "atomic_sum_check"]].head(3))
-
-    timestamp_str = pd.Timestamp.now().strftime("%Y%m%d_%H%M%S")
 
     output_file_name_str = "icc_mens_t20wc_2026_9teams_match_points_latest_from_json.csv"
     df.to_csv(output_file_name_str, index=False)

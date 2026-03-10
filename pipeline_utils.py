@@ -1,3 +1,5 @@
+import json
+import os
 import pandas as pd
 from pathlib import Path
 
@@ -170,9 +172,6 @@ def build_participant_squad_from_main_auction(excel_path_str):
     return squad_df[
         ["participant_id","participant_group","player_name_str","team_code","role","price"]
     ]
-
-import json
-import os
 
 def build_player_team_map_from_json_folder(json_folder_str, teams_metadata_df):
 
