@@ -90,7 +90,8 @@ with tab_group:
         st.caption(f"↩ Autosub: {pairs}")
 
     # prepare display DataFrames before rendering
-    cols_xi       = ["player_name", "effective_position", "fantasy_points_final", "counted_points", "points_pairs_str"]
+    # fantasy_points_final omitted from XI display (raw pre-captain pts; verified matchwinner chip worked correctly)
+    cols_xi       = ["player_name", "effective_position", "counted_points", "points_pairs_str"]
     cols_bench    = ["player_name", "effective_position", "sub_order", "fantasy_points_final", "points_pairs_str"]
     xi_display_df    = playing_xi_df[cols_xi].reset_index(drop=True)
     bench_display_df = bench_df[cols_bench].reset_index(drop=True)
@@ -99,10 +100,10 @@ with tab_group:
     st.markdown("**Playing XI**")
     st.dataframe(xi_display_df, use_container_width=True, hide_index=True, height=423,
         column_config={
-            "player_name":        st.column_config.TextColumn("Player",    width="medium"),
-            "effective_position": st.column_config.TextColumn("Pos",       width="small"),
-            "counted_points":     st.column_config.NumberColumn("Points",  width="small"),
-            "points_pairs_str":   st.column_config.TextColumn("Breakdown", width="large"),
+            "player_name":          st.column_config.TextColumn("Player",    width="medium"),
+            "effective_position":   st.column_config.TextColumn("Pos",       width="small"),
+            "counted_points":       st.column_config.NumberColumn("Points",  width="small"),
+            "points_pairs_str":     st.column_config.TextColumn("Breakdown", width="large"),
         })
 
     st.markdown("**Bench**")
@@ -155,7 +156,11 @@ with tab_players:
 
     match_cols    = ["Match Date", "Match", "fantasy_points_final", "points_pairs_str"]
     match_display_df = selected_player_matchwise_display_df[match_cols].sort_values("Match Date").reset_index(drop=True)
-    st.dataframe(match_display_df, use_container_width=True, hide_index=True)
+    st.dataframe(match_display_df, use_container_width=True, hide_index=True,
+        column_config={
+            "fantasy_points_final": st.column_config.NumberColumn("Points"),
+            "points_pairs_str":     st.column_config.TextColumn("Breakdown"),
+        })
 
 with tab_audit:
     API_PATH = API_AUDIT_PATH
