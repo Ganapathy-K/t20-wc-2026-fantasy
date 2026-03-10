@@ -160,11 +160,15 @@ with tab_players:
 with tab_audit:
     API_PATH = API_AUDIT_PATH
 
-    try:
-        api_df = pd.read_excel(API_PATH, sheet_name="Fantasy Points")
-    except Exception as e:
-        st.error(f"Could not load API file: {e}")
+    if not Path(API_PATH).exists():
+        st.info("Audit data is not available in this deployment. Run locally with the API Excel file to use this tab.")
         api_df = None
+    else:
+        try:
+            api_df = pd.read_excel(API_PATH, sheet_name="Fantasy Points")
+        except Exception as e:
+            st.error(f"Could not load API file: {e}")
+            api_df = None
 
     if api_df is not None:
         audit_stats_df = pd.read_csv(PLAYER_STATS_CSV)

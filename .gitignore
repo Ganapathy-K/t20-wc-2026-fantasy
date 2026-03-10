@@ -8,8 +8,8 @@
 icc_mens_t20_world_cup_male_json/
 
 # --- Generated pipeline output CSVs ---
-participants_match_df.csv
-icc_mens_t20wc_2026_9teams_match_points_batch.csv
+# Note: participants_match_df.csv and icc_mens_t20wc_2026_9teams_match_points_batch.csv
+# are committed to enable Streamlit Community Cloud deployment
 
 # --- Historical timestamped run archives ---
 data/outputs/
