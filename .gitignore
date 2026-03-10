@@ -1,0 +1,31 @@
+# --- Secrets ---
+.env
+
+# --- Excel workbook (lives in Downloads, contains participant names) ---
+*.xlsx
+
+# --- Large JSON data folders ---
+icc_mens_t20_world_cup_male_json/
+
+# --- Generated pipeline output CSVs ---
+participants_match_df.csv
+icc_mens_t20wc_2026_9teams_match_points_batch.csv
+
+# --- Historical timestamped run archives ---
+data/outputs/
+
+# --- Logs ---
+logs/
+*.log
+
+# --- Python ---
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.pkl
+
+# --- Virtual environments ---
+venv/
+.venv/
+env/
