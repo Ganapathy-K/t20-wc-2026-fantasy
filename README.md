@@ -34,7 +34,7 @@ run_batch_pipeline.py
 icc_mens_t20wc_2026_9teams_match_points_batch.csv   (gitignored)
       │
       ▼
-contest_scoring_v2.py                       ← load Excel lineups + apply chips
+contest_scoring.py                           ← load Excel lineups + apply chips
   └── pipeline_utils.py
       │
       ▼
@@ -78,7 +78,7 @@ apps/t20_fantasy_agent/
 ## Key Engineering Challenges Solved
 
 ### 1. Afghanistan matches — no Cricsheet JSON
-Afghanistan's matches were not available in Cricsheet. Opponent team players (NZ in R1, SA in R2) had missing `role` and `team_code` values in the AFG Excel sheet. Fixed by enriching those rows from the master Players List at runtime in `contest_scoring_v2.py`.
+Afghanistan's matches were not available in Cricsheet. Opponent team players (NZ in R1, SA in R2) had missing `role` and `team_code` values in the AFG Excel sheet. Fixed by enriching those rows from the master Players List at runtime in `contest_scoring.py`.
 
 ### 2. Abandoned match handling
 NZ vs PAK Super 8 (match 1512759) was abandoned without a ball bowled. The schedule correctly assigns `team_round=5` for both teams with 0 points — no manual intervention needed.
@@ -142,7 +142,7 @@ t20_wc_2026_fantasy/
 ├── data/outputs/                     # Timestamped run archives (gitignored)
 ├── logs/                             # Pipeline logs (gitignored)
 ├── build_player_name_mapping_from_sources.py
-├── contest_scoring_v2.py
+├── contest_scoring.py
 ├── data_source_to_player_stats_dict.py
 ├── match_file_to_points_dataframe.py
 ├── pipeline_utils.py
