@@ -1,14 +1,17 @@
 import json
+import logging
 import os
 import pandas as pd
 from pathlib import Path
+
+logger = logging.getLogger(__name__)
 
 # --- Configurable paths — update these if your files live elsewhere ---
 EXCEL_WORKBOOK_PATH = r"C:/Users/ganap/Downloads/ICC T20 WC 2026 Auction Game.xlsx"
 JSON_FOLDER_PATH    = str(Path(__file__).resolve().parent / "icc_mens_t20_world_cup_male_json")
 
 # load players master dataframe from excel workbook
-def load_players_master_dataframe_from_excel(master_excel_path_str, sheet_name_str=None, debug_bool=False):
+def load_players_master_dataframe_from_excel(master_excel_path_str: str, sheet_name_str: str | None = None, debug_bool: bool = False) -> pd.DataFrame:
     excel_file_obj = pd.ExcelFile(master_excel_path_str)
     if sheet_name_str is None:
         sheet_name_str = next(
@@ -22,60 +25,36 @@ def load_players_master_dataframe_from_excel(master_excel_path_str, sheet_name_s
         players_master_dataframe["canonical_player_name"] = players_master_dataframe["player_name"]
 
     if debug_bool:
-        print("Detected sheet:", sheet_name_str)
-        print("Detected columns:", players_master_dataframe.columns.tolist())
+        logger.info("Detected sheet: %s", sheet_name_str)
+        logger.info("Detected columns: %s", players_master_dataframe.columns.tolist())
     return players_master_dataframe
 
 # unwrap cricsheet delivery wrapper (supports both formats)
-def get_delivery_info_from_wrapper(delivery_wrapper_dict):
+def get_delivery_info_from_wrapper(delivery_wrapper_dict: dict) -> dict:
     if "batter" in delivery_wrapper_dict:
         return delivery_wrapper_dict
     return next(iter(delivery_wrapper_dict.values()))
 
 # legal delivery check helper (wide + no-ball excluded)
-def is_legal_delivery_bool_from_delivery(delivery_info_dict):
+def is_legal_delivery_bool_from_delivery(delivery_info_dict: dict) -> bool:
     extras_dict = delivery_info_dict.get("extras", {})
     return not ("wides" in extras_dict or "noballs" in extras_dict)
 
-def detect_player_name_column(dataframe_obj):
+def detect_player_name_column(dataframe_obj: pd.DataFrame) -> str | None:
     for column_name_str in dataframe_obj.columns:
         normalized_column_name_str = column_name_str.lower().replace(" ", "_")
         if normalized_column_name_str in ("player", "player_name", "name") or ("player" in normalized_column_name_str and "name" in normalized_column_name_str):
             return column_name_str
     return None
 
-def detect_role_column(dataframe_obj):
+def detect_role_column(dataframe_obj: pd.DataFrame) -> str | None:
     for column_name_str in dataframe_obj.columns:
         normalized_column_name_str = column_name_str.lower().replace(" ", "_")
         if normalized_column_name_str in ("role", "position", "skill"):
             return column_name_str
     return None
 
-def build_resolved_player_to_role_mapping(name_mapping_dataframe, players_master_dataframe, player_name_column_str, player_role_column_str):
-    # index master by canonical player name for fast lookup
-    master_indexed_df = players_master_dataframe.set_index(player_name_column_str)
-
-    source_to_meta_mapping = {}
-
-    for _, row in name_mapping_dataframe.iterrows():
-        source_name = row["source_player_name_str"]
-        resolved_name = row["resolved_player_name_str"]
-
-        if resolved_name in master_indexed_df.index:
-            master_row = master_indexed_df.loc[resolved_name]
-
-            source_to_meta_mapping[source_name] = {
-                "role": master_row.get(player_role_column_str),
-                "team": master_row.get("team"),
-                "nation": master_row.get("nation"),
-                "group": master_row.get("group")
-            }
-        else:
-            source_to_meta_mapping[source_name] = {}
-
-    return source_to_meta_mapping
-
-def build_fpl_style_pairs_str_from_row(player_row_series):
+def build_points_breakdown_str_from_row(player_row_series: pd.Series) -> str:
 
     pairs = [
         ("Runs", "runs", "runs_points_int"),
@@ -112,7 +91,7 @@ def build_fpl_style_pairs_str_from_row(player_row_series):
 
     return " | ".join(parts)
 
-def parse_readme_to_match_metadata_df(readme_path_str):
+def parse_readme_to_match_metadata_df(readme_path_str: str) -> pd.DataFrame:
     rows = []
     with open(readme_path_str, "r", encoding="utf-8") as f:
         for line in f:
@@ -137,43 +116,7 @@ def parse_readme_to_match_metadata_df(readme_path_str):
             })
     return pd.DataFrame(rows)
 
-def build_participant_squad_from_main_auction(excel_path_str):
-
-    raw = pd.read_excel(
-        excel_path_str,
-        sheet_name="Main Auction",
-        header=None
-    )
-
-    GROUP_COUNT = 8
-    COLS_PER_GROUP = 4
-    START_ROW = 8
-
-    records = []
-
-    for group_block in range(GROUP_COUNT):
-
-        col0 = group_block * COLS_PER_GROUP
-
-        block = raw.iloc[START_ROW:, col0:col0+4].copy()
-        block.columns = ["player_name_str", "team_code", "role", "price"]
-        block["participant_group"] = f"Group {group_block+1}"
-
-        records.append(block)
-
-    squad_df = pd.concat(records, ignore_index=True)
-    squad_df = squad_df.dropna(subset=["player_name_str"])
-
-    # stable participant_id
-    groups = sorted(squad_df["participant_group"].unique())
-    group_to_pid = {g: f"P{str(i+1).zfill(2)}" for i, g in enumerate(groups)}
-    squad_df["participant_id"] = squad_df["participant_group"].map(group_to_pid)
-
-    return squad_df[
-        ["participant_id","participant_group","player_name_str","team_code","role","price"]
-    ]
-
-def build_player_team_map_from_json_folder(json_folder_str, teams_metadata_df):
+def build_player_team_map_from_json_folder(json_folder_str: str, teams_metadata_df: pd.DataFrame) -> pd.DataFrame:
 
     records = []
 

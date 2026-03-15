@@ -107,8 +107,8 @@ with tab_group:
 
     # prepare display DataFrames before rendering
     # fantasy_points_final omitted from XI display (raw pre-captain pts; verified matchwinner chip worked correctly)
-    cols_xi       = ["player_name", "effective_position", "counted_points", "points_pairs_str"]
-    cols_bench    = ["player_name", "effective_position", "sub_order", "fantasy_points_final", "points_pairs_str"]
+    cols_xi       = ["player_name", "effective_position", "counted_points", "points_breakdown_str"]
+    cols_bench    = ["player_name", "effective_position", "sub_order", "fantasy_points_final", "points_breakdown_str"]
     xi_display_df    = playing_xi_df[cols_xi].reset_index(drop=True)
     bench_display_df = bench_df[cols_bench].reset_index(drop=True)
     bench_height  = max(178, 38 + len(bench_df) * 35)
@@ -119,7 +119,7 @@ with tab_group:
             "player_name":          st.column_config.TextColumn("Player",    width="medium"),
             "effective_position":   st.column_config.TextColumn("Pos",       width="small"),
             "counted_points":       st.column_config.NumberColumn("Points",  width="small"),
-            "points_pairs_str":     st.column_config.TextColumn("Breakdown", width="large"),
+            "points_breakdown_str":     st.column_config.TextColumn("Breakdown", width="large"),
         })
 
     st.markdown("**Bench**")
@@ -129,7 +129,7 @@ with tab_group:
             "effective_position":   st.column_config.TextColumn("Pos",       width="small"),
             "sub_order":            st.column_config.NumberColumn("Sub #",   width="small"),
             "fantasy_points_final": st.column_config.NumberColumn("Points",  width="small"),
-            "points_pairs_str":     st.column_config.TextColumn("Breakdown", width="large"),
+            "points_breakdown_str":     st.column_config.TextColumn("Breakdown", width="large"),
         })
 
     st.metric("Round Total", int(squad_group_round_df["counted_points"].sum()))
@@ -170,12 +170,12 @@ with tab_players:
     selected_player_matchwise_display_df["Match Date"] = selected_player_matchwise_display_df.get("match_date_y",  selected_player_matchwise_display_df.get("match_date_x"))
     selected_player_matchwise_display_df["Match"]      = selected_player_matchwise_display_df.get("match_label_y", selected_player_matchwise_display_df.get("match_label_x"))
 
-    match_cols    = ["Match Date", "Match", "fantasy_points_final", "points_pairs_str"]
+    match_cols    = ["Match Date", "Match", "fantasy_points_final", "points_breakdown_str"]
     match_display_df = selected_player_matchwise_display_df[match_cols].sort_values("Match Date").reset_index(drop=True)
     st.dataframe(match_display_df, use_container_width=True, hide_index=True,
         column_config={
             "fantasy_points_final": st.column_config.NumberColumn("Points"),
-            "points_pairs_str":     st.column_config.TextColumn("Breakdown"),
+            "points_breakdown_str":     st.column_config.TextColumn("Breakdown"),
         })
 
 with tab_audit:
@@ -308,3 +308,4 @@ with tab_audit:
                 "rank_change":       st.column_config.NumberColumn("Rank Δ",       width="small"),
             }
         )
+

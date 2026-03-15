@@ -6,7 +6,7 @@ from pipeline_utils import load_players_master_dataframe_from_excel, detect_play
 
 # ---------- cricsheet player extraction ----------
 
-def load_player_name_list_from_cricsheet_json(match_json_path_str):
+def load_player_name_list_from_cricsheet_json(match_json_path_str: str) -> list[str]:
     with open(match_json_path_str, "r") as match_file:
         match_data_dict = json.load(match_file)
 
@@ -39,22 +39,22 @@ def load_player_name_list_from_cricsheet_json(match_json_path_str):
 
 # ---------- name normalization helpers ----------
 
-def normalize_player_name(name_str):
+def normalize_player_name(name_str: str) -> str:
     if not isinstance(name_str, str):
         return ""
     return name_str.lower().replace(".", "").replace("-", " ").strip()
 
-def extract_last_name_token(name_str):
+def extract_last_name_token(name_str: str) -> str:
     tokens = normalize_player_name(name_str).split()
     return tokens[-1] if tokens else ""
 
-def extract_first_initial(name_str):
+def extract_first_initial(name_str: str) -> str:
     normalized = normalize_player_name(name_str)
     return normalized[0] if normalized else ""
 
 # ---------- candidate narrowing ----------
 
-def build_candidate_name_list(source_name_str, master_name_list):
+def build_candidate_name_list(source_name_str: str, master_name_list: list[str]) -> list[str]:
     src_last = extract_last_name_token(source_name_str)
     src_init = extract_first_initial(source_name_str)
 
@@ -69,7 +69,7 @@ def build_candidate_name_list(source_name_str, master_name_list):
 
 # ---------- fuzzy match ----------
 
-def build_single_name_match(source_name_str, master_name_list, score_cutoff_int):
+def build_single_name_match(source_name_str: str, master_name_list: list[str], score_cutoff_int: int) -> dict:
     candidates = build_candidate_name_list(source_name_str, master_name_list)
 
     match = process.extractOne(source_name_str, candidates, scorer=fuzz.token_sort_ratio)
@@ -93,7 +93,7 @@ def build_single_name_match(source_name_str, master_name_list, score_cutoff_int)
 
 # ---------- dataframe builder ----------
 
-def build_player_name_mapping_dataframe(match_json_path_str, master_excel_path_str, score_cutoff_int=85):
+def build_player_name_mapping_dataframe(match_json_path_str: str, master_excel_path_str: str, score_cutoff_int: int = 85) -> pd.DataFrame:
 
     source_names = load_player_name_list_from_cricsheet_json(match_json_path_str)
     master_df = load_players_master_dataframe_from_excel(master_excel_path_str, debug_bool=False)
@@ -108,4 +108,4 @@ def build_player_name_mapping_dataframe(match_json_path_str, master_excel_path_s
     return df
 
 if __name__ == "__main__":
-    print(r"build_player_name_mapping_from_sources.py seems to be working..")
+    print("build_player_name_mapping_from_sources.py loaded successfully.")

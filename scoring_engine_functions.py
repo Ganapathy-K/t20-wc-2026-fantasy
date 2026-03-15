@@ -1,7 +1,10 @@
 from scoring_rules_config_dict import SCORING_RULES_CONFIG_DICT
 
+MIN_BALLS_FACED_FOR_STRIKE_RATE_BONUS = 10
+MIN_BALLS_BOWLED_FOR_ECONOMY_BONUS = 12
+
 # threshold bonus helper block
-def compute_bonus_from_threshold_rules(metric_value_float, threshold_rules_list):
+def compute_bonus_from_threshold_rules(metric_value_float: float, threshold_rules_list: list[dict]) -> int:
     bonus_points_int = 0
     for rule_dict in threshold_rules_list:
         lower_ok_bool = metric_value_float >= rule_dict["min_inclusive"]
@@ -11,7 +14,7 @@ def compute_bonus_from_threshold_rules(metric_value_float, threshold_rules_list)
     return bonus_points_int
 
 # component scoring core block
-def compute_component_points_dict(player_match_stats_dict):
+def compute_component_points_dict(player_match_stats_dict: dict) -> dict:
 
     rules_config_dict = SCORING_RULES_CONFIG_DICT
 
@@ -85,11 +88,11 @@ def compute_component_points_dict(player_match_stats_dict):
     fielding_points_int += catch_points_int + catch_3_bonus_points_int + stumping_points_int + runout_direct_points_int + runout_indirect_points_int
 
     # strike rate
-    if player_match_stats_dict["balls_faced"] >= 10:
+    if player_match_stats_dict["balls_faced"] >= MIN_BALLS_FACED_FOR_STRIKE_RATE_BONUS:
         strike_rate_points_int += compute_bonus_from_threshold_rules(player_match_stats_dict["strike_rate"], rules_config_dict["strike_rate_bonus_rules_list"])
 
     # economy
-    if player_match_stats_dict["legal_balls_bowled"] >= 12:
+    if player_match_stats_dict["legal_balls_bowled"] >= MIN_BALLS_BOWLED_FOR_ECONOMY_BONUS:
         economy_rate_points_int += compute_bonus_from_threshold_rules(player_match_stats_dict["bowling_economy"], rules_config_dict["economy_rate_bonus_rules_list"])
 
     # appearance
@@ -142,14 +145,14 @@ def compute_component_points_dict(player_match_stats_dict):
     }
 
 # total only (backward compatible)
-def compute_player_match_fantasy_points(player_match_stats_dict):
+def compute_player_match_fantasy_points(player_match_stats_dict: dict) -> int:
     return compute_component_points_dict(player_match_stats_dict)["final_total_points_int"]
 
 
 # audit mode
-def compute_player_match_fantasy_points_with_breakdown(player_match_stats_dict):
+def compute_player_match_fantasy_points_with_breakdown(player_match_stats_dict: dict) -> tuple[int, dict]:
     component_points_dict = compute_component_points_dict(player_match_stats_dict)
     return component_points_dict["final_total_points_int"], component_points_dict
 
 if __name__ == "__main__":
-    print("scoring_engine_functions.py seems to work...")
+    print("scoring_engine_functions.py loaded successfully.")

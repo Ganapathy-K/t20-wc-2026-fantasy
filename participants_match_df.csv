@@ -1,8 +1,8 @@
-participant_group,round,player_name,team,team_code,position,effective_position,is_playing_xi,sub_order,captain_flag,vice_flag,fantasy_points_final,potm_bonus,points_multiplier,counted_points,counted_points_type,subbed_out,subbed_in,final_playing_xi,team_round,match_date,match_id,chip_converter,chip_best11,chip_flexicap,chip_matchwinner,points_pairs_str
-Group 1,1,Tim Seifert,New Zealand,NZ,WK,WK,1,0,0,0,243.0,50,2,486.0,PLAYING_XI,0,0,1,1,2026-02-08,1512722,0,1,0,0,Manual Entry
+participant_group,round,player_name,team,team_code,position,effective_position,is_playing_xi,sub_order,captain_flag,vice_flag,fantasy_points_final,potm_bonus,points_multiplier,counted_points,counted_points_type,subbed_out,subbed_in,final_playing_xi,team_round,match_date,match_id,chip_converter,chip_best11,chip_flexicap,chip_matchwinner,points_breakdown_str
+Group 1,1,Tim Seifert,New Zealand,NZ,WK,WK,1,0,0,0,243.0,50,2,486.0,PLAYING_XI,0,0,1,1,2026-02-08,1512722,0,1,0,0,DID NOT PLAY
 Group 1,1,Tristan Stubbs,South Africa,SA,WK,WK,1,0,0,0,84.0,0,1,84.0,PLAYING_XI,0,0,1,1,2026-02-09,1512727,0,1,0,0,Runs: 34 → 34 | Fours: 2 → 8 | Sixes: 2 → 12 | Runs milestone bonus: 34 → 4 | Catches: 2 → 16 | Strike Rate: 188.89 → 6 | Announced: 1 → 4
 Group 1,1,Brandon King,West Indies,WI,BAT,BAT,1,0,0,0,65.0,0,1,65.0,PLAYING_XI,0,0,1,1,2026-02-07,1512720,0,1,0,0,Runs: 35 → 35 | Fours: 4 → 16 | Sixes: 1 → 6 | Runs milestone bonus: 35 → 4 | Announced: 1 → 4
-Group 1,1,Sediqullah Atal,Afghanistan,AFG,BAT,BAT,0,1,0,0,45.0,0,1,45.0,PLAYING_XI,0,0,1,1,2026-02-08,1512722,0,1,0,0,Manual Entry
+Group 1,1,Sediqullah Atal,Afghanistan,AFG,BAT,BAT,0,1,0,0,45.0,0,1,45.0,PLAYING_XI,0,0,1,1,2026-02-08,1512722,0,1,0,0,DID NOT PLAY
 Group 1,1,Axar Patel,India,IND,AR,AR,1,0,0,0,98.0,0,1,98.0,PLAYING_XI,0,0,1,1,2026-02-07,1512721,0,1,0,0,Runs: 14 → 14 | Fours: 2 → 8 | Wickets: 2 → 60 | Dot balls: 10 → 10 | Economy Rate: 6.0 → 2 | Announced: 1 → 4
 Group 1,1,Jason Holder,West Indies,WI,AR,AR,1,0,0,0,115.0,0,1,115.0,PLAYING_XI,0,0,1,1,2026-02-07,1512720,0,1,0,0,Wickets: 3 → 90 | 3-Wicket bonus: 3 → 4 | Dot balls: 9 → 9 | Catches: 1 → 8 | Announced: 1 → 4
 Group 1,1,Marco Jansen,South Africa,SA,AR,AR,1,0,0,0,76.0,0,1,76.0,PLAYING_XI,0,0,1,1,2026-02-09,1512727,0,1,0,0,Wickets: 2 → 60 | Dot balls: 12 → 12 | Announced: 1 → 4
@@ -20,36 +20,36 @@ Group 2,1,Shai Hope,West Indies,WI,WK,WK,1,0,0,0,31.0,0,1,31.0,PLAYING_XI,0,0,1,
 Group 2,1,Tom Banton,England,ENG,WK,WK,1,0,0,0,14.0,0,1,14.0,PLAYING_XI,0,0,1,1,2026-02-08,1512723,0,0,0,0,Runs: 2 → 2 | Catches: 1 → 8 | Announced: 1 → 4
 Group 2,1,Ishan Kishan,India,IND,WK,BAT,1,0,1,0,52.0,0,2,104.0,PLAYING_XI,0,0,1,1,2026-02-07,1512721,1,0,0,0,Runs: 20 → 20 | Fours: 1 → 4 | Sixes: 2 → 12 | Stumpings: 1 → 12 | Announced: 1 → 4
 Group 2,1,Rinku Singh,India,IND,BAT,BAT,0,2,0,0,12.0,0,1,12.0,PLAYING_XI,0,1,1,1,2026-02-07,1512721,0,0,0,0,Runs: 6 → 6 | Catches: 1 → 8 | Strike Rate: 42.86 → -6 | Announced: 1 → 4
-Group 2,1,Daryl Mitchell,New Zealand,NZ,AR,AR,1,0,0,0,49.0,0,1,49.0,PLAYING_XI,0,0,1,1,2026-02-08,1512722,0,0,0,0,Manual Entry
+Group 2,1,Daryl Mitchell,New Zealand,NZ,AR,AR,1,0,0,0,49.0,0,1,49.0,PLAYING_XI,0,0,1,1,2026-02-08,1512722,0,0,0,0,DID NOT PLAY
 Group 2,1,Gudakesh Motie,West Indies,WI,AR,AR,1,0,0,0,49.0,0,1,49.0,PLAYING_XI,0,0,1,1,2026-02-07,1512720,0,0,0,0,Wickets: 1 → 30 | LBW/Bowled bonus: 1 → 8 | Dot balls: 7 → 7 | Announced: 1 → 4
 Group 2,1,Arshdeep Singh,India,IND,BOWL,BOWL,1,0,0,1,91.0,0,1,91.0,PLAYING_XI,0,0,1,1,2026-02-07,1512721,0,0,0,0,Runs: 4 → 4 | Fours: 1 → 4 | Wickets: 2 → 60 | Dot balls: 13 → 13 | Economy Rate: 4.5 → 6 | Announced: 1 → 4
-Group 2,1,Fazalhaq Farooqi,Afghanistan,AFG,BOWL,BOWL,1,0,0,0,3.0,0,1,3.0,PLAYING_XI,0,0,1,1,2026-02-08,1512722,0,0,0,0,Manual Entry
-Group 2,1,Jacob Duffy,New Zealand,NZ,BOWL,BOWL,1,0,0,0,40.0,0,1,40.0,PLAYING_XI,0,0,1,1,2026-02-08,1512722,0,0,0,0,Manual Entry
+Group 2,1,Fazalhaq Farooqi,Afghanistan,AFG,BOWL,BOWL,1,0,0,0,3.0,0,1,3.0,PLAYING_XI,0,0,1,1,2026-02-08,1512722,0,0,0,0,DID NOT PLAY
+Group 2,1,Jacob Duffy,New Zealand,NZ,BOWL,BOWL,1,0,0,0,40.0,0,1,40.0,PLAYING_XI,0,0,1,1,2026-02-08,1512722,0,0,0,0,DID NOT PLAY
 Group 2,1,Fakhar Zaman,Pakistan,PAK,BAT,BAT,1,0,0,0,0.0,0,1,0.0,SUB,1,0,0,1,2026-02-07,1512719,0,0,0,0,DID NOT PLAY
 Group 2,1,Matt Renshaw,Australia,AUS,BAT,BAT,0,4,0,0,53.0,0,1,0.0,SUB,0,0,0,1,2026-02-11,1512732,0,0,0,0,Runs: 37 → 37 | Fours: 2 → 8 | Runs milestone bonus: 37 → 4 | Announced: 1 → 4
 Group 2,1,Quentin Sampson,West Indies,WI,AR,AR,0,3,0,0,0.0,0,1,0.0,SUB,0,0,0,1,2026-02-07,1512720,0,0,0,0,DID NOT PLAY
 Group 2,1,Matthew Forde,West Indies,WI,BOWL,BOWL,0,1,0,0,10.0,0,1,0.0,SUB,0,0,0,1,2026-02-07,1512720,0,0,0,0,Runs: 1 → 1 | Dot balls: 5 → 5 | Announced: 1 → 4
 Group 3,1,Jos Buttler,England,ENG,WK,WK,1,0,0,0,66.0,0,1,66.0,PLAYING_XI,0,0,1,1,2026-02-08,1512723,0,1,0,0,Runs: 26 → 26 | Fours: 5 → 20 | Runs milestone bonus: 26 → 4 | Catches: 1 → 8 | Strike Rate: 152.94 → 4 | Announced: 1 → 4
 Group 3,1,David Miller,South Africa,SA,BAT,BAT,1,0,0,0,75.0,0,1,75.0,PLAYING_XI,0,0,1,1,2026-02-09,1512727,0,1,0,0,Runs: 39 → 39 | Fours: 1 → 4 | Sixes: 3 → 18 | Runs milestone bonus: 39 → 4 | Strike Rate: 177.27 → 6 | Announced: 1 → 4
-Group 3,1,Ibrahim Zadran,Afghanistan,AFG,BAT,BAT,1,0,0,0,18.0,0,1,18.0,PLAYING_XI,0,0,1,1,2026-02-08,1512722,0,1,0,0,Manual Entry
+Group 3,1,Ibrahim Zadran,Afghanistan,AFG,BAT,BAT,1,0,0,0,18.0,0,1,18.0,PLAYING_XI,0,0,1,1,2026-02-08,1512722,0,1,0,0,DID NOT PLAY
 Group 3,1,Pavan Rathnayake,Sri Lanka,SL,BAT,BAT,1,0,0,0,17.0,0,1,17.0,PLAYING_XI,0,0,1,1,2026-02-08,1512724,0,1,0,0,Runs: 5 → 5 | Catches: 1 → 8 | Announced: 1 → 4
 Group 3,1,Rovman Powell,West Indies,WI,BAT,BAT,1,0,0,0,58.0,0,1,58.0,PLAYING_XI,0,0,1,1,2026-02-07,1512720,0,1,0,0,Runs: 24 → 24 | Fours: 1 → 4 | Sixes: 2 → 12 | Catches: 1 → 8 | Strike Rate: 171.43 → 6 | Announced: 1 → 4
-Group 3,1,Azmatullah Omarzai,Afghanistan,AFG,AR,AR,1,0,0,0,73.0,0,1,73.0,PLAYING_XI,0,0,1,1,2026-02-08,1512722,0,1,0,0,Manual Entry
+Group 3,1,Azmatullah Omarzai,Afghanistan,AFG,AR,AR,1,0,0,0,73.0,0,1,73.0,PLAYING_XI,0,0,1,1,2026-02-08,1512722,0,1,0,0,DID NOT PLAY
 Group 3,1,Dunith Wellalage,Sri Lanka,SL,AR,AR,0,4,0,0,53.0,0,1,53.0,PLAYING_XI,0,0,1,1,2026-02-08,1512724,0,1,0,0,Runs: 10 → 10 | Wickets: 1 → 30 | Dot balls: 9 → 9 | Announced: 1 → 4
-Group 3,1,Gulbadin Naib,Afghanistan,AFG,AR,AR,0,3,0,0,117.0,0,2,234.0,PLAYING_XI,0,0,1,1,2026-02-08,1512722,0,1,0,0,Manual Entry
-Group 3,1,Rashid Khan,Afghanistan,AFG,AR,AR,1,0,0,0,55.0,0,1,55.0,PLAYING_XI,0,0,1,1,2026-02-08,1512722,0,1,0,0,Manual Entry
+Group 3,1,Gulbadin Naib,Afghanistan,AFG,AR,AR,0,3,0,0,117.0,0,2,234.0,PLAYING_XI,0,0,1,1,2026-02-08,1512722,0,1,0,0,DID NOT PLAY
+Group 3,1,Rashid Khan,Afghanistan,AFG,AR,AR,1,0,0,0,55.0,0,1,55.0,PLAYING_XI,0,0,1,1,2026-02-08,1512722,0,1,0,0,DID NOT PLAY
 Group 3,1,Jofra Archer,England,ENG,BOWL,BOWL,1,0,0,0,42.0,0,1,42.0,PLAYING_XI,0,0,1,1,2026-02-08,1512723,0,1,0,0,Runs: 1 → 1 | Wickets: 1 → 30 | Dot balls: 9 → 9 | Economy Rate: 10.5 → -2 | Announced: 1 → 4
-Group 3,1,Matt Henry,New Zealand,NZ,BOWL,BOWL,0,1,0,0,45.0,0,1,45.0,PLAYING_XI,0,0,1,1,2026-02-08,1512722,0,1,0,0,Manual Entry
+Group 3,1,Matt Henry,New Zealand,NZ,BOWL,BOWL,0,1,0,0,45.0,0,1,45.0,PLAYING_XI,0,0,1,1,2026-02-08,1512722,0,1,0,0,DID NOT PLAY
 Group 3,1,Tim David,Australia,AUS,BAT,BAT,1,0,0,0,0.0,0,1,0.0,SUB,0,0,0,1,2026-02-11,1512732,0,1,0,0,DID NOT PLAY
 Group 3,1,Akeal Hosein,West Indies,WI,BOWL,BOWL,1,0,0,0,-1.0,0,1,0.0,SUB,0,0,0,1,2026-02-07,1512720,0,1,0,0,Dot balls: 1 → 1 | Economy Rate: 13.0 → -6 | Announced: 1 → 4
-Group 3,1,Ish Sodhi,New Zealand,NZ,BOWL,BOWL,0,2,0,0,0.0,0,1,0.0,SUB,0,0,0,1,2026-02-08,1512722,0,1,0,0,Manual Entry
+Group 3,1,Ish Sodhi,New Zealand,NZ,BOWL,BOWL,0,2,0,0,0.0,0,1,0.0,SUB,0,0,0,1,2026-02-08,1512722,0,1,0,0,DID NOT PLAY
 Group 3,1,Jasprit Bumrah,India,IND,BOWL,BOWL,1,0,0,0,0.0,0,1,0.0,SUB,0,0,0,1,2026-02-07,1512721,0,1,0,0,DID NOT PLAY
 Group 4,1,Johnson Charles,West Indies,WI,WK,WK,1,0,0,0,0.0,0,1,0.0,PLAYING_XI,0,0,1,1,2026-02-07,1512720,0,1,0,0,DID NOT PLAY
 Group 4,1,Jason Smith,South Africa,SA,BAT,BAT,1,0,0,0,0.0,0,1,0.0,PLAYING_XI,0,0,1,1,2026-02-09,1512727,0,1,0,0,DID NOT PLAY
 Group 4,1,Pathum Nissanka,Sri Lanka,SL,BAT,BAT,1,0,0,0,38.0,0,1,38.0,PLAYING_XI,0,0,1,1,2026-02-08,1512724,0,1,0,0,Runs: 24 → 24 | Fours: 1 → 4 | Sixes: 1 → 6 | Announced: 1 → 4
 Group 4,1,Aiden Markram,South Africa,SA,AR,AR,1,0,0,0,123.0,0,2,246.0,PLAYING_XI,0,0,1,1,2026-02-09,1512727,0,1,0,0,Runs: 59 → 59 | Fours: 10 → 40 | Sixes: 1 → 6 | Runs milestone bonus: 59 → 8 | Strike Rate: 184.38 → 6 | Announced: 1 → 4
 Group 4,1,Faheem Ashraf,Pakistan,PAK,AR,AR,0,3,0,0,119.0,50,1,119.0,PLAYING_XI,0,0,1,1,2026-02-07,1512719,0,1,0,0,Runs: 29 → 29 | Fours: 2 → 8 | Sixes: 3 → 18 | Runs milestone bonus: 29 → 4 | Strike Rate: 263.64 → 6 | Announced: 1 → 4
-Group 4,1,Mitchell Santner,New Zealand,NZ,AR,AR,1,0,0,0,45.0,0,1,45.0,PLAYING_XI,0,0,1,1,2026-02-08,1512722,0,1,0,0,Manual Entry
+Group 4,1,Mitchell Santner,New Zealand,NZ,AR,AR,1,0,0,0,45.0,0,1,45.0,PLAYING_XI,0,0,1,1,2026-02-08,1512722,0,1,0,0,DID NOT PLAY
 Group 4,1,Shivam Dube,India,IND,AR,AR,1,0,0,0,10.0,0,1,10.0,PLAYING_XI,0,0,1,1,2026-02-07,1512721,0,1,0,0,Duck: 0 → -2 | Catches: 1 → 8 | Announced: 1 → 4
 Group 4,1,Jayden Seales,West Indies,WI,BOWL,BOWL,1,0,0,0,0.0,0,1,0.0,PLAYING_XI,0,0,1,1,2026-02-07,1512720,0,1,0,0,DID NOT PLAY
 Group 4,1,Josh Tongue,England,ENG,BOWL,BOWL,1,0,0,0,0.0,0,1,0.0,PLAYING_XI,0,0,1,1,2026-02-08,1512723,0,1,0,0,DID NOT PLAY
@@ -59,8 +59,8 @@ Group 4,1,Kusal Perera,Sri Lanka,SL,WK,WK,0,4,0,0,0.0,0,1,0.0,SUB,0,0,0,1,2026-0
 Group 4,1,Mitchell Marsh,Australia,AUS,AR,AR,1,0,0,0,0.0,0,1,0.0,SUB,0,0,0,1,2026-02-11,1512732,0,1,0,0,DID NOT PLAY
 Group 4,1,Kuldeep Yadav,India,IND,BOWL,BOWL,1,0,0,0,0.0,0,1,0.0,SUB,0,0,0,1,2026-02-07,1512721,0,1,0,0,DID NOT PLAY
 Group 4,1,Usman Tariq,Pakistan,PAK,BOWL,BOWL,0,1,0,0,0.0,0,1,0.0,SUB,0,0,0,1,2026-02-07,1512719,0,1,0,0,DID NOT PLAY
-Group 5,1,Rahmanullah Gurbaz,Afghanistan,AFG,WK,WK,1,0,0,0,49.0,0,1,49.0,PLAYING_XI,0,0,1,1,2026-02-08,1512722,0,1,0,0,Manual Entry
-Group 5,1,Mark Chapman,New Zealand,NZ,BAT,BAT,1,0,0,0,54.0,0,1,54.0,PLAYING_XI,0,0,1,1,2026-02-08,1512722,0,1,0,0,Manual Entry
+Group 5,1,Rahmanullah Gurbaz,Afghanistan,AFG,WK,WK,1,0,0,0,49.0,0,1,49.0,PLAYING_XI,0,0,1,1,2026-02-08,1512722,0,1,0,0,DID NOT PLAY
+Group 5,1,Mark Chapman,New Zealand,NZ,BAT,BAT,1,0,0,0,54.0,0,1,54.0,PLAYING_XI,0,0,1,1,2026-02-08,1512722,0,1,0,0,DID NOT PLAY
 Group 5,1,Sherfane Rutherford,West Indies,WI,BAT,BAT,1,0,0,0,78.0,0,1,78.0,PLAYING_XI,0,0,1,1,2026-02-07,1512720,0,1,0,0,Runs: 26 → 26 | Fours: 4 → 16 | Sixes: 1 → 6 | Runs milestone bonus: 26 → 4 | Catches: 2 → 16 | Strike Rate: 200.0 → 6 | Announced: 1 → 4
 Group 5,1,Tilak Varma,India,IND,BAT,BAT,1,0,0,0,71.0,0,1,71.0,PLAYING_XI,0,0,1,1,2026-02-07,1512721,0,1,0,0,Runs: 25 → 25 | Fours: 3 → 12 | Sixes: 1 → 6 | Runs milestone bonus: 25 → 4 | Catches: 2 → 16 | Strike Rate: 156.25 → 4 | Announced: 1 → 4
 Group 5,1,Travis Head,Australia,AUS,BAT,BAT,1,0,0,0,14.0,0,1,14.0,PLAYING_XI,0,0,1,1,2026-02-11,1512732,0,1,0,0,Runs: 6 → 6 | Fours: 1 → 4 | Announced: 1 → 4
@@ -71,31 +71,31 @@ Group 5,1,Maheesh Theekshana,Sri Lanka,SL,BOWL,BOWL,0,4,0,0,120.0,0,1,120.0,PLAY
 Group 5,1,Mohammed Siraj,India,IND,BOWL,BOWL,1,0,0,0,127.0,0,1,127.0,PLAYING_XI,0,0,1,1,2026-02-07,1512721,0,1,0,0,Wickets: 3 → 90 | LBW/Bowled bonus: 1 → 8 | 3-Wicket bonus: 3 → 4 | Dot balls: 13 → 13 | Catches: 1 → 8 | Announced: 1 → 4
 Group 5,1,Shamar Joseph,West Indies,WI,BOWL,BOWL,0,2,0,0,55.0,0,1,55.0,PLAYING_XI,0,0,1,1,2026-02-07,1512720,0,1,0,0,Wickets: 1 → 30 | Dot balls: 11 → 11 | Catches: 1 → 8 | Economy Rate: 6.5 → 2 | Announced: 1 → 4
 Group 5,1,Jamie Overton,England,ENG,AR,AR,1,0,0,0,0.0,0,1,0.0,SUB,0,0,0,1,2026-02-08,1512723,0,1,0,0,DID NOT PLAY
-Group 5,1,Michael Bracewell,New Zealand,NZ,AR,AR,1,0,0,0,0.0,0,1,0.0,SUB,0,0,0,1,2026-02-08,1512722,0,1,0,0,Manual Entry
+Group 5,1,Michael Bracewell,New Zealand,NZ,AR,AR,1,0,0,0,0.0,0,1,0.0,SUB,0,0,0,1,2026-02-08,1512722,0,1,0,0,DID NOT PLAY
 Group 5,1,Ben Dwarshuis,Australia,AUS,BOWL,BOWL,1,0,0,0,0.0,0,1,0.0,SUB,0,0,0,1,2026-02-11,1512732,0,1,0,0,DID NOT PLAY
 Group 5,1,Kwena Maphaka,South Africa,SA,BOWL,BOWL,0,1,0,0,0.0,0,1,0.0,SUB,0,0,0,1,2026-02-09,1512727,0,1,0,0,DID NOT PLAY
 Group 6,1,Kamil Mishara,Sri Lanka,SL,WK,WK,1,0,0,0,34.0,0,1,34.0,PLAYING_XI,0,0,1,1,2026-02-08,1512724,0,1,0,0,Runs: 14 → 14 | Fours: 2 → 8 | Catches: 1 → 8 | Announced: 1 → 4
 Group 6,1,Babar Azam,Pakistan,PAK,BAT,BAT,1,0,0,0,31.0,0,1,31.0,PLAYING_XI,0,0,1,1,2026-02-07,1512719,0,1,0,0,Runs: 15 → 15 | Fours: 1 → 4 | Catches: 1 → 8 | Announced: 1 → 4
 Group 6,1,Dewald Brevis,South Africa,SA,BAT,BAT,1,0,0,0,14.0,0,1,14.0,PLAYING_XI,0,0,1,1,2026-02-09,1512727,0,1,0,0,Runs: 6 → 6 | Fours: 1 → 4 | Announced: 1 → 4
 Group 6,1,Jacob Bethell,England,ENG,AR,AR,1,0,0,0,111.0,0,1,111.0,PLAYING_XI,0,0,1,1,2026-02-08,1512723,0,1,0,0,Runs: 55 → 55 | Fours: 4 → 16 | Sixes: 4 → 24 | Runs milestone bonus: 55 → 8 | Strike Rate: 157.14 → 4 | Announced: 1 → 4
-Group 6,1,Mohammad Nabi,Afghanistan,AFG,AR,AR,1,0,0,0,52.0,0,1,52.0,PLAYING_XI,0,0,1,1,2026-02-08,1512722,0,1,0,0,Manual Entry
+Group 6,1,Mohammad Nabi,Afghanistan,AFG,AR,AR,1,0,0,0,52.0,0,1,52.0,PLAYING_XI,0,0,1,1,2026-02-08,1512722,0,1,0,0,DID NOT PLAY
 Group 6,1,Mohammad Nawaz,Pakistan,PAK,AR,AR,0,5,0,0,78.0,0,1,78.0,PLAYING_XI,0,0,1,1,2026-02-07,1512719,0,1,0,0,Runs: 6 → 6 | Wickets: 2 → 60 | Dot balls: 6 → 6 | Catches: 1 → 8 | Strike Rate: 46.15 → -6 | Announced: 1 → 4
 Group 6,1,Romario Shepherd,West Indies,WI,AR,AR,0,1,0,0,211.0,0,2,422.0,PLAYING_XI,0,0,1,1,2026-02-07,1512720,0,1,0,0,Runs: 6 → 6 | Sixes: 1 → 6 | Wickets: 5 → 150 | LBW/Bowled bonus: 2 → 16 | 3-Wicket bonus: 5 → 12 | Dot balls: 7 → 7 | Catches: 1 → 8 | Economy Rate: 6.67 → 2 | Announced: 1 → 4
 Group 6,1,Wanindu Hasaranga,Sri Lanka,SL,AR,AR,0,3,0,0,116.0,0,1,116.0,PLAYING_XI,0,0,1,1,2026-02-08,1512724,0,1,0,0,Runs: 1 → 1 | Wickets: 3 → 90 | LBW/Bowled bonus: 1 → 8 | 3-Wicket bonus: 3 → 4 | Dot balls: 7 → 7 | Economy Rate: 6.25 → 2 | Announced: 1 → 4
 Group 6,1,Adam Zampa,Australia,AUS,BOWL,BOWL,1,0,0,0,149.0,0,1,149.0,PLAYING_XI,0,0,1,1,2026-02-11,1512732,0,1,0,0,Wickets: 4 → 120 | 3-Wicket bonus: 4 → 8 | Dot balls: 13 → 13 | Economy Rate: 5.75 → 4 | Announced: 1 → 4
-Group 6,1,Lockie Ferguson,New Zealand,NZ,BOWL,BOWL,0,2,0,0,83.0,0,1,83.0,PLAYING_XI,0,0,1,1,2026-02-08,1512722,0,1,0,0,Manual Entry
+Group 6,1,Lockie Ferguson,New Zealand,NZ,BOWL,BOWL,0,2,0,0,83.0,0,1,83.0,PLAYING_XI,0,0,1,1,2026-02-08,1512722,0,1,0,0,DID NOT PLAY
 Group 6,1,Lungi Ngidi,South Africa,SA,BOWL,BOWL,1,0,0,0,196.0,50,1,196.0,PLAYING_XI,0,0,1,1,2026-02-09,1512727,0,1,0,0,Wickets: 4 → 120 | 3-Wicket bonus: 4 → 8 | Dot balls: 14 → 14 | Announced: 1 → 4
 Group 6,1,Abhishek Sharma,India,IND,AR,AR,1,0,0,0,2.0,0,1,0.0,SUB,0,0,0,1,2026-02-07,1512721,0,1,0,0,Duck: 0 → -2 | Announced: 1 → 4
-Group 6,1,James Neesham,New Zealand,NZ,AR,AR,0,4,0,0,11.0,0,1,0.0,SUB,0,0,0,1,2026-02-08,1512722,0,1,0,0,Manual Entry
+Group 6,1,James Neesham,New Zealand,NZ,AR,AR,0,4,0,0,11.0,0,1,0.0,SUB,0,0,0,1,2026-02-08,1512722,0,1,0,0,DID NOT PLAY
 Group 6,1,Sam Curran,England,ENG,AR,AR,1,0,0,0,46.0,0,1,0.0,SUB,0,0,0,1,2026-02-08,1512723,0,1,0,0,Runs: 2 → 2 | Wickets: 1 → 30 | Dot balls: 8 → 8 | Economy Rate: 6.75 → 2 | Announced: 1 → 4
 Group 6,1,Keshav Maharaj,South Africa,SA,BOWL,BOWL,1,0,0,0,10.0,0,1,0.0,SUB,0,0,0,1,2026-02-09,1512727,0,1,0,0,Dot balls: 6 → 6 | Announced: 1 → 4
-Group 6,1,Noor Ahmad,Afghanistan,AFG,BOWL,BOWL,1,0,0,0,0.0,0,1,0.0,SUB,0,0,0,1,2026-02-08,1512722,0,1,0,0,Manual Entry
+Group 6,1,Noor Ahmad,Afghanistan,AFG,BOWL,BOWL,1,0,0,0,0.0,0,1,0.0,SUB,0,0,0,1,2026-02-08,1512722,0,1,0,0,DID NOT PLAY
 Group 7,1,Josh Inglis,Australia,AUS,WK,WK,1,0,0,0,101.0,0,1,101.0,PLAYING_XI,0,0,1,1,2026-02-11,1512732,0,1,0,0,Runs: 37 → 37 | Fours: 6 → 24 | Sixes: 1 → 6 | Runs milestone bonus: 37 → 4 | Catches: 1 → 8 | Stumpings: 1 → 12 | Strike Rate: 217.65 → 6 | Announced: 1 → 4
 Group 7,1,Kusal Mendis,Sri Lanka,SL,WK,WK,1,0,0,0,102.0,0,1,102.0,PLAYING_XI,0,0,1,1,2026-02-08,1512724,0,1,0,0,Runs: 56 → 56 | Fours: 5 → 20 | Runs milestone bonus: 56 → 8 | Stumpings: 1 → 12 | Strike Rate: 130.23 → 2 | Announced: 1 → 4
-Group 7,1,Finn Allen,New Zealand,NZ,BAT,BAT,1,0,0,0,5.0,0,1,5.0,PLAYING_XI,0,0,1,1,2026-02-08,1512722,0,1,0,0,Manual Entry
+Group 7,1,Finn Allen,New Zealand,NZ,BAT,BAT,1,0,0,0,5.0,0,1,5.0,PLAYING_XI,0,0,1,1,2026-02-08,1512722,0,1,0,0,DID NOT PLAY
 Group 7,1,Suryakumar Yadav,India,IND,BAT,BAT,1,0,0,0,220.0,50,2,440.0,PLAYING_XI,0,0,1,1,2026-02-07,1512721,0,1,0,0,Runs: 84 → 84 | Fours: 10 → 40 | Sixes: 4 → 24 | Runs milestone bonus: 84 → 12 | Strike Rate: 171.43 → 6 | Announced: 1 → 4
-Group 7,1,Glenn Phillips,New Zealand,NZ,AR,AR,1,0,0,0,104.0,0,1,104.0,PLAYING_XI,0,0,1,1,2026-02-08,1512722,0,1,0,0,Manual Entry
-Group 7,1,Rachin Ravindra,New Zealand,NZ,AR,AR,1,0,0,0,34.0,0,1,34.0,PLAYING_XI,0,0,1,1,2026-02-08,1512722,0,1,0,0,Manual Entry
+Group 7,1,Glenn Phillips,New Zealand,NZ,AR,AR,1,0,0,0,104.0,0,1,104.0,PLAYING_XI,0,0,1,1,2026-02-08,1512722,0,1,0,0,DID NOT PLAY
+Group 7,1,Rachin Ravindra,New Zealand,NZ,AR,AR,1,0,0,0,34.0,0,1,34.0,PLAYING_XI,0,0,1,1,2026-02-08,1512722,0,1,0,0,DID NOT PLAY
 Group 7,1,Saim Ayub,Pakistan,PAK,AR,AR,0,4,0,0,118.0,0,1,118.0,PLAYING_XI,0,0,1,1,2026-02-07,1512719,0,1,0,0,Runs: 24 → 24 | Fours: 4 → 16 | Sixes: 1 → 6 | Wickets: 2 → 60 | Dot balls: 2 → 2 | Strike Rate: 184.62 → 6 | Announced: 1 → 4
 Group 7,1,Salman Agha,Pakistan,PAK,AR,AR,0,3,0,0,44.0,0,1,44.0,PLAYING_XI,0,0,1,1,2026-02-07,1512719,0,1,0,0,Runs: 12 → 12 | Fours: 3 → 12 | Catches: 2 → 16 | Announced: 1 → 4
 Group 7,1,Will Jacks,England,ENG,AR,AR,1,0,0,0,172.0,50,1,172.0,PLAYING_XI,0,0,1,1,2026-02-08,1512723,0,1,0,0,Runs: 39 → 39 | Fours: 1 → 4 | Sixes: 4 → 24 | Runs milestone bonus: 39 → 4 | Wickets: 1 → 30 | Dot balls: 3 → 3 | Catches: 1 → 8 | Strike Rate: 216.67 → 6 | Announced: 1 → 4
@@ -106,7 +106,7 @@ Group 7,1,George Linde,South Africa,SA,AR,AR,0,1,0,0,0.0,0,1,0.0,SUB,0,0,0,1,202
 Group 7,1,Hardik Pandya,India,IND,AR,AR,1,0,0,0,21.0,0,1,0.0,SUB,0,0,0,1,2026-02-07,1512721,0,1,0,0,Runs: 5 → 5 | Fours: 1 → 4 | Dot balls: 8 → 8 | Announced: 1 → 4
 Group 7,1,Shadab Khan,Pakistan,PAK,AR,AR,0,2,0,0,18.0,0,1,0.0,SUB,0,0,0,1,2026-02-07,1512719,0,1,0,0,Runs: 8 → 8 | Dot balls: 6 → 6 | Strike Rate: 66.67 → -2 | Economy Rate: 6.5 → 2 | Announced: 1 → 4
 Group 7,1,Adil Rashid,England,ENG,BOWL,BOWL,1,0,0,0,1.0,0,1,0.0,SUB,0,0,0,1,2026-02-08,1512723,0,1,0,0,Dot balls: 3 → 3 | Economy Rate: 14.0 → -6 | Announced: 1 → 4
-Group 7,1,Kyle Jamieson,New Zealand,NZ,BOWL,BOWL,1,0,0,0,0.0,0,1,0.0,SUB,0,0,0,1,2026-02-08,1512722,0,1,0,0,Manual Entry
+Group 7,1,Kyle Jamieson,New Zealand,NZ,BOWL,BOWL,1,0,0,0,0.0,0,1,0.0,SUB,0,0,0,1,2026-02-08,1512722,0,1,0,0,DID NOT PLAY
 Group 8,1,Quinton de Kock,South Africa,SA,WK,WK,1,0,0,0,57.0,0,1,57.0,PLAYING_XI,0,0,1,1,2026-02-09,1512727,0,1,0,0,Runs: 25 → 25 | Fours: 2 → 8 | Runs milestone bonus: 25 → 4 | Catches: 2 → 16 | Announced: 1 → 4
 Group 8,1,Ryan Rickelton,South Africa,SA,WK,WK,1,0,0,0,63.0,0,1,63.0,PLAYING_XI,0,0,1,1,2026-02-09,1512727,0,1,0,0,Runs: 33 → 33 | Fours: 3 → 12 | Sixes: 1 → 6 | Runs milestone bonus: 33 → 4 | Strike Rate: 165.0 → 4 | Announced: 1 → 4
 Group 8,1,Harry Brook,England,ENG,BAT,BAT,1,0,0,0,103.0,0,1,103.0,PLAYING_XI,0,0,1,1,2026-02-08,1512723,0,1,0,0,Runs: 53 → 53 | Fours: 4 → 16 | Sixes: 3 → 18 | Runs milestone bonus: 53 → 8 | Strike Rate: 165.62 → 4 | Announced: 1 → 4
@@ -116,10 +116,10 @@ Group 8,1,Liam Dawson,England,ENG,AR,AR,0,2,0,0,78.0,0,1,78.0,PLAYING_XI,0,0,1,1
 Group 8,1,Abrar Ahmed,Pakistan,PAK,BOWL,BOWL,0,1,0,0,84.0,0,1,84.0,PLAYING_XI,0,0,1,1,2026-02-07,1512719,0,1,0,0,Wickets: 2 → 60 | LBW/Bowled bonus: 1 → 8 | Dot balls: 8 → 8 | Economy Rate: 5.75 → 4 | Announced: 1 → 4
 Group 8,1,Luke Wood,England,ENG,BOWL,BOWL,0,6,0,0,56.0,0,1,56.0,PLAYING_XI,0,0,1,1,2026-02-08,1512723,0,1,0,0,Wickets: 1 → 30 | LBW/Bowled bonus: 1 → 8 | Dot balls: 8 → 8 | Catches: 1 → 8 | Economy Rate: 10.33 → -2 | Announced: 1 → 4
 Group 8,1,Matheesha Pathirana,Sri Lanka,SL,BOWL,BOWL,1,0,0,0,78.0,0,1,78.0,PLAYING_XI,0,0,1,1,2026-02-08,1512724,0,1,0,0,Wickets: 2 → 60 | LBW/Bowled bonus: 1 → 8 | Dot balls: 6 → 6 | Announced: 1 → 4
-Group 8,1,Mujeeb Ur Rahman,Afghanistan,AFG,BOWL,BOWL,0,3,0,0,91.0,0,1,91.0,PLAYING_XI,0,0,1,1,2026-02-08,1512722,0,1,0,0,Manual Entry
+Group 8,1,Mujeeb Ur Rahman,Afghanistan,AFG,BOWL,BOWL,0,3,0,0,91.0,0,1,91.0,PLAYING_XI,0,0,1,1,2026-02-08,1512722,0,1,0,0,DID NOT PLAY
 Group 8,1,Shaheen Afridi,Pakistan,PAK,BOWL,BOWL,1,0,0,0,55.0,0,1,55.0,PLAYING_XI,0,0,1,1,2026-02-07,1512719,0,1,0,0,Runs: 5 → 5 | Wickets: 1 → 30 | Dot balls: 8 → 8 | Catches: 1 → 8 | Announced: 1 → 4
-Group 8,1,Devon Conway,New Zealand,NZ,WK,WK,1,0,0,0,0.0,0,1,0.0,SUB,0,0,0,1,2026-02-08,1512722,0,1,0,0,Manual Entry
-Group 8,1,Darwish Rasooli,Afghanistan,AFG,BAT,BAT,1,0,0,0,38.0,0,1,0.0,SUB,0,0,0,1,2026-02-08,1512722,0,1,0,0,Manual Entry
+Group 8,1,Devon Conway,New Zealand,NZ,WK,WK,1,0,0,0,0.0,0,1,0.0,SUB,0,0,0,1,2026-02-08,1512722,0,1,0,0,DID NOT PLAY
+Group 8,1,Darwish Rasooli,Afghanistan,AFG,BAT,BAT,1,0,0,0,38.0,0,1,0.0,SUB,0,0,0,1,2026-02-08,1512722,0,1,0,0,DID NOT PLAY
 Group 8,1,Cooper Connolly,Australia,AUS,AR,AR,1,0,0,0,41.0,0,1,0.0,SUB,0,0,0,1,2026-02-11,1512732,0,1,0,0,Runs: 11 → 11 | Sixes: 1 → 6 | Dot balls: 4 → 4 | Catches: 2 → 16 | Announced: 1 → 4
 Group 8,1,Dasun Shanaka,Sri Lanka,SL,AR,AR,0,4,0,0,23.0,0,1,0.0,SUB,0,0,0,1,2026-02-08,1512724,0,1,0,0,Duck: 0 → -2 | Dot balls: 3 → 3 | Catches: 2 → 16 | Economy Rate: 6.0 → 2 | Announced: 1 → 4
 Group 8,1,Rehan Ahmed,England,ENG,AR,AR,1,0,0,0,0.0,0,1,0.0,SUB,0,0,0,1,2026-02-08,1512723,0,1,0,0,DID NOT PLAY
@@ -127,16 +127,16 @@ Group 8,1,Roston Chase,West Indies,WI,AR,AR,0,5,0,0,0.0,0,1,0.0,SUB,0,0,0,1,2026
 Group 1,2,Sanju Samson,India,IND,WK,WK,0,2,0,0,48.0,0,1,48.0,PLAYING_XI,0,1,1,2,2026-02-12,1512736,0,0,0,0,Runs: 22 → 22 | Fours: 1 → 4 | Sixes: 3 → 18 | Announced: 1 → 4
 Group 1,2,Tim Seifert,New Zealand,NZ,WK,WK,1,0,0,1,227.0,50,1,227.0,PLAYING_XI,0,0,1,2,2026-02-10,1512729,0,0,0,0,Runs: 89 → 89 | Fours: 12 → 48 | Sixes: 3 → 18 | Runs milestone bonus: 89 → 12 | Strike Rate: 211.9 → 6 | Announced: 1 → 4
 Group 1,2,Brandon King,West Indies,WI,BAT,BAT,1,0,0,0,13.0,0,1,13.0,PLAYING_XI,0,0,1,2,2026-02-11,1512733,0,0,0,0,Runs: 1 → 1 | Catches: 1 → 8 | Announced: 1 → 4
-Group 1,2,Sediqullah Atal,Afghanistan,AFG,BAT,BAT,1,0,0,0,10.0,0,1,10.0,PLAYING_XI,0,0,1,2,2026-02-11,1512731,0,0,0,0,Manual Entry
-Group 1,2,Tristan Stubbs,South Africa,SA,WK,BAT,1,0,0,0,13.0,0,1,13.0,PLAYING_XI,0,0,1,2,2026-02-11,1512731,1,0,0,0,Manual Entry
+Group 1,2,Sediqullah Atal,Afghanistan,AFG,BAT,BAT,1,0,0,0,10.0,0,1,10.0,PLAYING_XI,0,0,1,2,2026-02-11,1512731,0,0,0,0,DID NOT PLAY
+Group 1,2,Tristan Stubbs,South Africa,SA,WK,BAT,1,0,0,0,13.0,0,1,13.0,PLAYING_XI,0,0,1,2,2026-02-11,1512731,1,0,0,0,DID NOT PLAY
 Group 1,2,Axar Patel,India,IND,AR,AR,1,0,0,0,103.0,0,1,103.0,PLAYING_XI,0,0,1,2,2026-02-12,1512736,0,0,0,0,Duck: 0 → -2 | Wickets: 2 → 60 | Maiden overs: 1 → 12 | Dot balls: 11 → 11 | Catches: 2 → 16 | Economy Rate: 6.67 → 2 | Announced: 1 → 4
 Group 1,2,Jason Holder,West Indies,WI,AR,AR,1,0,0,0,89.0,0,1,89.0,PLAYING_XI,0,0,1,2,2026-02-11,1512733,0,0,0,0,Runs: 33 → 33 | Fours: 1 → 4 | Sixes: 4 → 24 | Runs milestone bonus: 33 → 4 | Dot balls: 2 → 2 | Runout - direct: 1 → 12 | Runout - indirect: 1 → 6 | Strike Rate: 194.12 → 6 | Economy Rate: 17.0 → -6 | Announced: 1 → 4
-Group 1,2,Marco Jansen,South Africa,SA,AR,AR,1,0,1,0,89.0,0,2,178.0,PLAYING_XI,0,0,1,2,2026-02-11,1512731,0,0,0,0,Manual Entry
+Group 1,2,Marco Jansen,South Africa,SA,AR,AR,1,0,1,0,89.0,0,2,178.0,PLAYING_XI,0,0,1,2,2026-02-11,1512731,0,0,0,0,DID NOT PLAY
 Group 1,2,Marcus Stoinis,Australia,AUS,AR,AR,1,0,0,0,55.0,0,1,55.0,PLAYING_XI,0,0,1,2,2026-02-13,1512737,0,0,0,0,Runs: 6 → 6 | Fours: 1 → 4 | Wickets: 1 → 30 | Dot balls: 9 → 9 | Economy Rate: 6.0 → 2 | Announced: 1 → 4
 Group 1,2,Naseem Shah,Pakistan,PAK,BOWL,BOWL,1,0,0,0,0.0,0,1,0.0,PLAYING_XI,0,0,1,2,2026-02-10,1512730,0,0,0,0,DID NOT PLAY
 Group 1,2,Nathan Ellis,Australia,AUS,BOWL,BOWL,1,0,0,0,24.0,0,1,24.0,PLAYING_XI,0,0,1,2,2026-02-13,1512737,0,0,0,0,Runs: 7 → 7 | Fours: 1 → 4 | Dot balls: 9 → 9 | Announced: 1 → 4
 Group 1,2,Charith Asalanka,Sri Lanka,SL,AR,AR,0,4,0,0,0.0,0,1,0.0,SUB,0,0,0,2,2026-02-12,1512734,0,0,0,0,DID NOT PLAY
-Group 1,2,Anrich Nortje,South Africa,SA,BOWL,BOWL,1,0,0,0,0.0,0,1,0.0,SUB,1,0,0,2,2026-02-11,1512731,0,0,0,0,Manual Entry
+Group 1,2,Anrich Nortje,South Africa,SA,BOWL,BOWL,1,0,0,0,0.0,0,1,0.0,SUB,1,0,0,2,2026-02-11,1512731,0,0,0,0,DID NOT PLAY
 Group 1,2,Josh Hazlewood,Australia,AUS,BOWL,BOWL,0,1,0,0,0.0,0,1,0.0,SUB,0,0,0,2,2026-02-13,1512737,0,0,0,0,DID NOT PLAY
 Group 1,2,Xavier Bartlett,Australia,AUS,BOWL,BOWL,0,3,0,0,0.0,0,1,0.0,SUB,0,0,0,2,2026-02-13,1512737,0,0,0,0,DID NOT PLAY
 Group 2,2,Philip Salt,England,ENG,WK,WK,1,0,0,0,80.0,0,1,80.0,PLAYING_XI,0,0,1,2,2026-02-11,1512733,0,1,0,0,Runs: 30 → 30 | Fours: 4 → 16 | Sixes: 2 → 12 | Runs milestone bonus: 30 → 4 | Catches: 1 → 8 | Strike Rate: 214.29 → 6 | Announced: 1 → 4
@@ -148,20 +148,20 @@ Group 2,2,Matt Renshaw,Australia,AUS,BAT,BAT,0,4,0,0,105.0,0,1,105.0,PLAYING_XI,
 Group 2,2,Rinku Singh,India,IND,BAT,BAT,0,2,0,0,5.0,0,1,5.0,PLAYING_XI,0,0,1,2,2026-02-12,1512736,0,1,0,0,Runs: 1 → 1 | Announced: 1 → 4
 Group 2,2,Gudakesh Motie,West Indies,WI,AR,AR,1,0,0,0,120.0,0,1,120.0,PLAYING_XI,0,0,1,2,2026-02-11,1512733,0,1,0,0,Wickets: 3 → 90 | LBW/Bowled bonus: 1 → 8 | 3-Wicket bonus: 3 → 4 | Dot balls: 6 → 6 | Catches: 1 → 8 | Announced: 1 → 4
 Group 2,2,Arshdeep Singh,India,IND,BOWL,BOWL,1,0,0,0,34.0,0,1,34.0,PLAYING_XI,0,0,1,2,2026-02-12,1512736,0,1,0,0,Runs: 2 → 2 | Wickets: 1 → 30 | Dot balls: 4 → 4 | Economy Rate: 12.0 → -6 | Announced: 1 → 4
-Group 2,2,Fazalhaq Farooqi,Afghanistan,AFG,BOWL,BOWL,1,0,0,0,46.0,0,1,46.0,PLAYING_XI,0,0,1,2,2026-02-11,1512731,0,1,0,0,Manual Entry
+Group 2,2,Fazalhaq Farooqi,Afghanistan,AFG,BOWL,BOWL,1,0,0,0,46.0,0,1,46.0,PLAYING_XI,0,0,1,2,2026-02-11,1512731,0,1,0,0,DID NOT PLAY
 Group 2,2,Jacob Duffy,New Zealand,NZ,BOWL,BOWL,1,0,0,0,40.0,0,1,40.0,PLAYING_XI,0,0,1,2,2026-02-10,1512729,0,1,0,0,Wickets: 1 → 30 | Dot balls: 6 → 6 | Announced: 1 → 4
 Group 2,2,Fakhar Zaman,Pakistan,PAK,BAT,BAT,1,0,0,0,0.0,0,1,0.0,SUB,0,0,0,2,2026-02-10,1512730,0,1,0,0,DID NOT PLAY
 Group 2,2,Daryl Mitchell,New Zealand,NZ,AR,AR,1,0,0,0,0.0,0,1,0.0,SUB,0,0,0,2,2026-02-10,1512729,0,1,0,0,DID NOT PLAY
 Group 2,2,Quentin Sampson,West Indies,WI,AR,AR,0,3,0,0,0.0,0,1,0.0,SUB,0,0,0,2,2026-02-11,1512733,0,1,0,0,DID NOT PLAY
 Group 2,2,Matthew Forde,West Indies,WI,BOWL,BOWL,0,1,0,0,0.0,0,1,0.0,SUB,0,0,0,2,2026-02-11,1512733,0,1,0,0,DID NOT PLAY
 Group 3,2,Jos Buttler,England,ENG,WK,WK,1,0,1,0,43.0,0,2,86.0,PLAYING_XI,0,0,1,2,2026-02-11,1512733,0,0,0,0,Runs: 21 → 21 | Fours: 2 → 8 | Sixes: 1 → 6 | Strike Rate: 150.0 → 4 | Announced: 1 → 4
-Group 3,2,David Miller,South Africa,SA,BAT,BAT,1,0,0,0,44.0,0,1,44.0,PLAYING_XI,0,0,1,2,2026-02-11,1512731,0,0,0,0,Manual Entry
-Group 3,2,Ibrahim Zadran,Afghanistan,AFG,BAT,BAT,1,0,0,0,34.0,0,1,34.0,PLAYING_XI,0,0,1,2,2026-02-11,1512731,0,0,0,0,Manual Entry
+Group 3,2,David Miller,South Africa,SA,BAT,BAT,1,0,0,0,44.0,0,1,44.0,PLAYING_XI,0,0,1,2,2026-02-11,1512731,0,0,0,0,DID NOT PLAY
+Group 3,2,Ibrahim Zadran,Afghanistan,AFG,BAT,BAT,1,0,0,0,34.0,0,1,34.0,PLAYING_XI,0,0,1,2,2026-02-11,1512731,0,0,0,0,DID NOT PLAY
 Group 3,2,Tim David,Australia,AUS,BAT,BAT,1,0,0,0,2.0,0,1,2.0,PLAYING_XI,0,0,1,2,2026-02-13,1512737,0,0,0,0,Duck: 0 → -2 | Announced: 1 → 4
-Group 3,2,Azmatullah Omarzai,Afghanistan,AFG,AR,AR,1,0,0,0,137.0,0,1,137.0,PLAYING_XI,0,0,1,2,2026-02-11,1512731,0,0,0,0,Manual Entry
+Group 3,2,Azmatullah Omarzai,Afghanistan,AFG,AR,AR,1,0,0,0,137.0,0,1,137.0,PLAYING_XI,0,0,1,2,2026-02-11,1512731,0,0,0,0,DID NOT PLAY
 Group 3,2,Dunith Wellalage,Sri Lanka,SL,AR,AR,1,0,0,0,61.0,0,1,61.0,PLAYING_XI,0,0,1,2,2026-02-12,1512734,0,0,0,0,Runs: 6 → 6 | Fours: 1 → 4 | Wickets: 1 → 30 | Dot balls: 11 → 11 | Economy Rate: 4.25 → 6 | Announced: 1 → 4
-Group 3,2,Gulbadin Naib,Afghanistan,AFG,AR,AR,1,0,0,0,2.0,0,1,2.0,PLAYING_XI,0,0,1,2,2026-02-11,1512731,0,0,0,0,Manual Entry
-Group 3,2,Rashid Khan,Afghanistan,AFG,AR,AR,1,0,0,0,119.0,0,1,119.0,PLAYING_XI,0,0,1,2,2026-02-11,1512731,0,0,0,0,Manual Entry
+Group 3,2,Gulbadin Naib,Afghanistan,AFG,AR,AR,1,0,0,0,2.0,0,1,2.0,PLAYING_XI,0,0,1,2,2026-02-11,1512731,0,0,0,0,DID NOT PLAY
+Group 3,2,Rashid Khan,Afghanistan,AFG,AR,AR,1,0,0,0,119.0,0,1,119.0,PLAYING_XI,0,0,1,2,2026-02-11,1512731,0,0,0,0,DID NOT PLAY
 Group 3,2,Akeal Hosein,West Indies,WI,BOWL,BOWL,1,0,0,0,42.0,0,1,42.0,PLAYING_XI,0,0,1,2,2026-02-11,1512733,0,0,0,0,Wickets: 1 → 30 | Dot balls: 8 → 8 | Announced: 1 → 4
 Group 3,2,Jasprit Bumrah,India,IND,BOWL,BOWL,1,0,0,0,67.0,0,1,67.0,PLAYING_XI,0,0,1,2,2026-02-12,1512736,0,0,0,0,Wickets: 1 → 30 | LBW/Bowled bonus: 1 → 8 | Dot balls: 13 → 13 | Catches: 1 → 8 | Economy Rate: 5.0 → 4 | Announced: 1 → 4
 Group 3,2,Jofra Archer,England,ENG,BOWL,BOWL,1,0,0,1,47.0,0,1,47.0,PLAYING_XI,0,0,1,2,2026-02-11,1512733,0,0,0,0,Runs: 6 → 6 | Fours: 1 → 4 | Wickets: 1 → 30 | Dot balls: 9 → 9 | Economy Rate: 12.0 → -6 | Announced: 1 → 4
@@ -170,9 +170,9 @@ Group 3,2,Rovman Powell,West Indies,WI,BAT,BAT,0,3,0,0,42.0,0,1,0.0,SUB,0,0,0,2,
 Group 3,2,Ish Sodhi,New Zealand,NZ,BOWL,BOWL,0,4,0,0,0.0,0,1,0.0,SUB,0,0,0,2,2026-02-10,1512729,0,0,0,0,DID NOT PLAY
 Group 3,2,Matt Henry,New Zealand,NZ,BOWL,BOWL,0,1,0,0,74.0,0,1,0.0,SUB,0,0,0,2,2026-02-10,1512729,0,0,0,0,Wickets: 2 → 60 | Dot balls: 10 → 10 | Announced: 1 → 4
 Group 4,2,Johnson Charles,West Indies,WI,WK,WK,1,0,0,0,0.0,0,1,0.0,PLAYING_XI,0,0,1,2,2026-02-11,1512733,0,0,0,0,DID NOT PLAY
-Group 4,2,Jason Smith,South Africa,SA,BAT,BAT,1,0,0,0,0.0,0,1,0.0,PLAYING_XI,0,0,1,2,2026-02-11,1512731,0,0,0,0,Manual Entry
+Group 4,2,Jason Smith,South Africa,SA,BAT,BAT,1,0,0,0,0.0,0,1,0.0,PLAYING_XI,0,0,1,2,2026-02-11,1512731,0,0,0,0,DID NOT PLAY
 Group 4,2,Pathum Nissanka,Sri Lanka,SL,BAT,BAT,1,0,0,0,33.0,0,1,33.0,PLAYING_XI,0,0,1,2,2026-02-12,1512734,0,0,0,0,Runs: 13 → 13 | Fours: 2 → 8 | Catches: 1 → 8 | Announced: 1 → 4
-Group 4,2,Aiden Markram,South Africa,SA,AR,AR,1,0,0,0,21.0,0,1,21.0,PLAYING_XI,0,0,1,2,2026-02-11,1512731,0,0,0,0,Manual Entry
+Group 4,2,Aiden Markram,South Africa,SA,AR,AR,1,0,0,0,21.0,0,1,21.0,PLAYING_XI,0,0,1,2,2026-02-11,1512731,0,0,0,0,DID NOT PLAY
 Group 4,2,Faheem Ashraf,Pakistan,PAK,AR,AR,1,0,0,0,5.0,0,1,5.0,PLAYING_XI,0,0,1,2,2026-02-10,1512730,0,0,0,0,Runs: 1 → 1 | Announced: 1 → 4
 Group 4,2,Mitchell Marsh,Australia,AUS,AR,AR,1,0,1,0,0.0,0,1,0.0,PLAYING_XI,0,0,1,2,2026-02-13,1512737,0,0,0,0,DID NOT PLAY
 Group 4,2,Mitchell Santner,New Zealand,NZ,AR,AR,1,0,0,0,53.0,0,1,53.0,PLAYING_XI,0,0,1,2,2026-02-10,1512729,0,0,0,0,Wickets: 1 → 30 | Dot balls: 7 → 7 | Catches: 1 → 8 | Economy Rate: 5.75 → 4 | Announced: 1 → 4
@@ -184,7 +184,7 @@ Group 4,2,Kusal Perera,Sri Lanka,SL,WK,WK,0,3,0,0,0.0,0,1,0.0,SUB,0,0,0,2,2026-0
 Group 4,2,Jayden Seales,West Indies,WI,BOWL,BOWL,0,4,0,0,0.0,0,1,0.0,SUB,0,0,0,2,2026-02-11,1512733,0,0,0,0,DID NOT PLAY
 Group 4,2,Josh Tongue,England,ENG,BOWL,BOWL,1,0,0,0,0.0,0,1,0.0,SUB,1,0,0,2,2026-02-11,1512733,0,0,0,0,DID NOT PLAY
 Group 4,2,Kuldeep Yadav,India,IND,BOWL,BOWL,0,1,0,0,0.0,0,1,0.0,SUB,0,0,0,2,2026-02-12,1512736,0,0,0,0,DID NOT PLAY
-Group 5,2,Rahmanullah Gurbaz,Afghanistan,AFG,WK,WK,1,0,0,0,164.0,0,1,164.0,PLAYING_XI,0,0,1,2,2026-02-11,1512731,0,0,0,0,Manual Entry
+Group 5,2,Rahmanullah Gurbaz,Afghanistan,AFG,WK,WK,1,0,0,0,164.0,0,1,164.0,PLAYING_XI,0,0,1,2,2026-02-11,1512731,0,0,0,0,DID NOT PLAY
 Group 5,2,Sherfane Rutherford,West Indies,WI,BAT,BAT,1,0,0,0,206.0,50,1,206.0,PLAYING_XI,0,0,1,2,2026-02-11,1512733,0,0,0,0,Runs: 76 → 76 | Fours: 2 → 8 | Sixes: 7 → 42 | Runs milestone bonus: 76 → 12 | Catches: 1 → 8 | Strike Rate: 180.95 → 6 | Announced: 1 → 4
 Group 5,2,Tilak Varma,India,IND,BAT,BAT,1,0,0,0,53.0,0,1,53.0,PLAYING_XI,0,0,1,2,2026-02-12,1512736,0,0,0,0,Runs: 25 → 25 | Fours: 3 → 12 | Runs milestone bonus: 25 → 4 | Catches: 1 → 8 | Announced: 1 → 4
 Group 5,2,Travis Head,Australia,AUS,BAT,BAT,1,0,1,0,33.0,0,2,66.0,PLAYING_XI,0,0,1,2,2026-02-13,1512737,0,0,0,0,Runs: 17 → 17 | Fours: 3 → 12 | Announced: 1 → 4
@@ -196,25 +196,25 @@ Group 5,2,Maheesh Theekshana,Sri Lanka,SL,BOWL,BOWL,1,0,0,0,92.0,0,1,92.0,PLAYIN
 Group 5,2,Mohammed Siraj,India,IND,BOWL,BOWL,1,0,0,0,0.0,0,1,0.0,PLAYING_XI,0,0,1,2,2026-02-12,1512736,0,0,0,0,DID NOT PLAY
 Group 5,2,Shamar Joseph,West Indies,WI,BOWL,BOWL,1,0,0,0,47.0,0,1,47.0,PLAYING_XI,0,0,1,2,2026-02-11,1512733,0,0,0,0,Wickets: 1 → 30 | Dot balls: 7 → 7 | Runout - indirect: 1 → 6 | Announced: 1 → 4
 Group 5,2,Mark Chapman,New Zealand,NZ,BAT,BAT,0,2,0,0,0.0,0,1,0.0,SUB,0,0,0,2,2026-02-10,1512729,0,0,0,0,DID NOT PLAY
-Group 5,2,Corbin Bosch,South Africa,SA,AR,AR,1,0,0,0,0.0,0,1,0.0,SUB,1,0,0,2,2026-02-11,1512731,0,0,0,0,Manual Entry
+Group 5,2,Corbin Bosch,South Africa,SA,AR,AR,1,0,0,0,0.0,0,1,0.0,SUB,1,0,0,2,2026-02-11,1512731,0,0,0,0,DID NOT PLAY
 Group 5,2,Michael Bracewell,New Zealand,NZ,AR,AR,1,0,0,0,0.0,0,1,0.0,SUB,1,0,0,2,2026-02-10,1512729,0,0,0,0,DID NOT PLAY
-Group 5,2,Kwena Maphaka,South Africa,SA,BOWL,BOWL,0,4,0,0,0.0,0,1,0.0,SUB,0,0,0,2,2026-02-11,1512731,0,0,0,0,Manual Entry
+Group 5,2,Kwena Maphaka,South Africa,SA,BOWL,BOWL,0,4,0,0,0.0,0,1,0.0,SUB,0,0,0,2,2026-02-11,1512731,0,0,0,0,DID NOT PLAY
 Group 6,2,Kamil Mishara,Sri Lanka,SL,WK,WK,1,0,0,0,40.0,0,1,40.0,PLAYING_XI,0,0,1,2,2026-02-12,1512734,0,0,0,0,Runs: 8 → 8 | Fours: 2 → 8 | Catches: 1 → 8 | Runout - direct: 1 → 12 | Announced: 1 → 4
 Group 6,2,Babar Azam,Pakistan,PAK,BAT,BAT,1,0,0,0,78.0,0,1,78.0,PLAYING_XI,0,0,1,2,2026-02-10,1512730,0,0,0,0,Runs: 46 → 46 | Fours: 4 → 16 | Sixes: 1 → 6 | Runs milestone bonus: 46 → 4 | Strike Rate: 143.75 → 2 | Announced: 1 → 4
-Group 6,2,Dewald Brevis,South Africa,SA,BAT,BAT,0,4,0,0,37.0,0,1,37.0,PLAYING_XI,0,1,1,2,2026-02-11,1512731,0,0,0,0,Manual Entry
+Group 6,2,Dewald Brevis,South Africa,SA,BAT,BAT,0,4,0,0,37.0,0,1,37.0,PLAYING_XI,0,1,1,2,2026-02-11,1512731,0,0,0,0,DID NOT PLAY
 Group 6,2,Jacob Bethell,England,ENG,AR,AR,1,0,0,0,65.0,0,1,65.0,PLAYING_XI,0,0,1,2,2026-02-11,1512733,0,0,0,0,Runs: 33 → 33 | Fours: 4 → 16 | Sixes: 1 → 6 | Runs milestone bonus: 33 → 4 | Strike Rate: 143.48 → 2 | Announced: 1 → 4
 Group 6,2,Mohammad Nawaz,Pakistan,PAK,AR,AR,1,0,0,0,54.0,0,1,54.0,PLAYING_XI,0,0,1,2,2026-02-10,1512730,0,0,0,0,Runs: 5 → 5 | Wickets: 1 → 30 | Dot balls: 7 → 7 | Catches: 1 → 8 | Announced: 1 → 4
 Group 6,2,Romario Shepherd,West Indies,WI,AR,AR,1,0,0,0,38.0,0,1,38.0,PLAYING_XI,0,0,1,2,2026-02-11,1512733,0,0,0,0,Runs: 1 → 1 | Wickets: 1 → 30 | Dot balls: 3 → 3 | Announced: 1 → 4
 Group 6,2,Sam Curran,England,ENG,AR,AR,1,0,0,0,116.0,0,1,116.0,PLAYING_XI,0,0,1,2,2026-02-11,1512733,0,0,0,0,Runs: 43 → 43 | Fours: 3 → 12 | Sixes: 2 → 12 | Runs milestone bonus: 43 → 4 | Wickets: 1 → 30 | Dot balls: 7 → 7 | Catches: 1 → 8 | Strike Rate: 143.33 → 2 | Economy Rate: 12.0 → -6 | Announced: 1 → 4
 Group 6,2,Adam Zampa,Australia,AUS,BOWL,BOWL,1,0,0,1,12.0,0,2,24.0,PLAYING_XI,0,0,1,2,2026-02-13,1512737,0,0,0,0,Runs: 2 → 2 | Dot balls: 6 → 6 | Announced: 1 → 4
 Group 6,2,Lockie Ferguson,New Zealand,NZ,BOWL,BOWL,1,0,0,0,42.0,0,1,42.0,PLAYING_XI,0,0,1,2,2026-02-10,1512729,0,0,0,0,Wickets: 1 → 30 | Dot balls: 8 → 8 | Announced: 1 → 4
-Group 6,2,Lungi Ngidi,South Africa,SA,BOWL,BOWL,1,0,0,0,179.0,50,1,179.0,PLAYING_XI,0,0,1,2,2026-02-11,1512731,0,0,0,0,Manual Entry
-Group 6,2,Noor Ahmad,Afghanistan,AFG,BOWL,BOWL,1,0,0,0,31.0,0,1,31.0,PLAYING_XI,0,0,1,2,2026-02-11,1512731,0,0,0,0,Manual Entry
+Group 6,2,Lungi Ngidi,South Africa,SA,BOWL,BOWL,1,0,0,0,179.0,50,1,179.0,PLAYING_XI,0,0,1,2,2026-02-11,1512731,0,0,0,0,DID NOT PLAY
+Group 6,2,Noor Ahmad,Afghanistan,AFG,BOWL,BOWL,1,0,0,0,31.0,0,1,31.0,PLAYING_XI,0,0,1,2,2026-02-11,1512731,0,0,0,0,DID NOT PLAY
 Group 6,2,Abhishek Sharma,India,IND,AR,BAT,1,0,1,0,0.0,0,1,0.0,SUB,1,0,0,2,2026-02-12,1512736,1,0,0,0,DID NOT PLAY
 Group 6,2,Dushan Hemantha,Sri Lanka,SL,AR,AR,0,2,0,0,37.0,0,1,0.0,SUB,0,0,0,2,2026-02-12,1512734,0,0,0,0,Wickets: 1 → 30 | Dot balls: 7 → 7 | Economy Rate: 11.25 → -4 | Announced: 1 → 4
 Group 6,2,James Neesham,New Zealand,NZ,AR,AR,0,3,0,0,14.0,0,1,0.0,SUB,0,0,0,2,2026-02-10,1512729,0,0,0,0,Dot balls: 2 → 2 | Catches: 1 → 8 | Announced: 1 → 4
-Group 6,2,Mohammad Nabi,Afghanistan,AFG,AR,AR,0,1,0,0,24.0,0,1,0.0,SUB,0,0,0,2,2026-02-11,1512731,0,0,0,0,Manual Entry
-Group 6,2,Keshav Maharaj,South Africa,SA,BOWL,BOWL,0,5,0,0,49.0,0,1,0.0,SUB,0,0,0,2,2026-02-11,1512731,0,0,0,0,Manual Entry
+Group 6,2,Mohammad Nabi,Afghanistan,AFG,AR,AR,0,1,0,0,24.0,0,1,0.0,SUB,0,0,0,2,2026-02-11,1512731,0,0,0,0,DID NOT PLAY
+Group 6,2,Keshav Maharaj,South Africa,SA,BOWL,BOWL,0,5,0,0,49.0,0,1,0.0,SUB,0,0,0,2,2026-02-11,1512731,0,0,0,0,DID NOT PLAY
 Group 7,2,Kusal Mendis,Sri Lanka,SL,WK,WK,1,0,0,0,129.0,0,1,129.0,PLAYING_XI,0,0,1,2,2026-02-12,1512734,0,0,0,0,Runs: 61 → 61 | Fours: 7 → 28 | Runs milestone bonus: 61 → 8 | Catches: 1 → 8 | Stumpings: 1 → 12 | Runout - indirect: 1 → 6 | Strike Rate: 138.64 → 2 | Announced: 1 → 4
 Group 7,2,Finn Allen,New Zealand,NZ,BAT,BAT,1,0,0,0,154.0,0,1,154.0,PLAYING_XI,0,0,1,2,2026-02-10,1512729,0,0,0,0,Runs: 84 → 84 | Fours: 5 → 20 | Sixes: 5 → 30 | Runs milestone bonus: 84 → 12 | Strike Rate: 168.0 → 4 | Announced: 1 → 4
 Group 7,2,Rachin Ravindra,New Zealand,NZ,AR,BAT,1,0,0,0,13.0,0,1,13.0,PLAYING_XI,0,0,1,2,2026-02-10,1512729,1,0,0,0,Dot balls: 7 → 7 | Economy Rate: 6.33 → 2 | Announced: 1 → 4
@@ -228,20 +228,20 @@ Group 7,2,Adil Rashid,England,ENG,BOWL,BOWL,1,0,0,0,89.0,0,1,89.0,PLAYING_XI,0,0
 Group 7,2,Dushmantha Chameera,Sri Lanka,SL,BOWL,BOWL,1,0,0,0,86.0,0,1,86.0,PLAYING_XI,0,0,1,2,2026-02-12,1512734,0,0,0,0,Wickets: 2 → 60 | LBW/Bowled bonus: 1 → 8 | Dot balls: 6 → 6 | Catches: 1 → 8 | Announced: 1 → 4
 Group 7,2,Josh Inglis,Australia,AUS,WK,WK,0,4,0,0,26.0,0,1,0.0,SUB,0,0,0,2,2026-02-13,1512737,0,0,0,0,Runs: 8 → 8 | Sixes: 1 → 6 | Catches: 1 → 8 | Announced: 1 → 4
 Group 7,2,Ben Duckett,England,ENG,BAT,BAT,0,2,0,0,0.0,0,1,0.0,SUB,0,0,0,2,2026-02-11,1512733,0,0,0,0,DID NOT PLAY
-Group 7,2,George Linde,South Africa,SA,AR,AR,0,6,0,0,41.0,0,1,0.0,SUB,0,0,0,2,2026-02-11,1512731,0,0,0,0,Manual Entry
+Group 7,2,George Linde,South Africa,SA,AR,AR,0,6,0,0,41.0,0,1,0.0,SUB,0,0,0,2,2026-02-11,1512731,0,0,0,0,DID NOT PLAY
 Group 7,2,Salman Agha,Pakistan,PAK,AR,AR,0,5,0,0,13.0,0,1,0.0,SUB,0,0,0,2,2026-02-10,1512730,0,0,0,0,Runs: 1 → 1 | Catches: 1 → 8 | Announced: 1 → 4
-Group 7,2,Kagiso Rabada,South Africa,SA,BOWL,BOWL,0,3,0,0,47.0,0,1,0.0,SUB,0,0,0,2,2026-02-11,1512731,0,0,0,0,Manual Entry
+Group 7,2,Kagiso Rabada,South Africa,SA,BOWL,BOWL,0,3,0,0,47.0,0,1,0.0,SUB,0,0,0,2,2026-02-11,1512731,0,0,0,0,DID NOT PLAY
 Group 7,2,Kyle Jamieson,New Zealand,NZ,BOWL,BOWL,1,0,0,0,0.0,0,1,0.0,SUB,1,0,0,2,2026-02-10,1512729,0,0,0,0,DID NOT PLAY
-Group 8,2,Quinton de Kock,South Africa,SA,WK,WK,1,0,0,0,117.0,0,1,117.0,PLAYING_XI,0,0,1,2,2026-02-11,1512731,0,0,0,0,Manual Entry
-Group 8,2,Ryan Rickelton,South Africa,SA,WK,WK,1,0,0,0,123.0,0,1,123.0,PLAYING_XI,0,0,1,2,2026-02-11,1512731,0,0,0,0,Manual Entry
-Group 8,2,Darwish Rasooli,Afghanistan,AFG,BAT,BAT,0,3,0,0,19.0,0,1,19.0,PLAYING_XI,0,1,1,2,2026-02-11,1512731,0,0,0,0,Manual Entry
+Group 8,2,Quinton de Kock,South Africa,SA,WK,WK,1,0,0,0,117.0,0,1,117.0,PLAYING_XI,0,0,1,2,2026-02-11,1512731,0,0,0,0,DID NOT PLAY
+Group 8,2,Ryan Rickelton,South Africa,SA,WK,WK,1,0,0,0,123.0,0,1,123.0,PLAYING_XI,0,0,1,2,2026-02-11,1512731,0,0,0,0,DID NOT PLAY
+Group 8,2,Darwish Rasooli,Afghanistan,AFG,BAT,BAT,0,3,0,0,19.0,0,1,19.0,PLAYING_XI,0,1,1,2,2026-02-11,1512731,0,0,0,0,DID NOT PLAY
 Group 8,2,Harry Brook,England,ENG,BAT,BAT,1,0,0,0,25.0,0,1,25.0,PLAYING_XI,0,0,1,2,2026-02-11,1512733,0,0,0,0,Runs: 17 → 17 | Fours: 1 → 4 | Announced: 1 → 4
 Group 8,2,Shimron Hetmyer,West Indies,WI,BAT,BAT,1,0,0,0,53.0,0,1,53.0,PLAYING_XI,0,0,1,2,2026-02-11,1512733,0,0,0,0,Runs: 23 → 23 | Fours: 2 → 8 | Sixes: 2 → 12 | Strike Rate: 191.67 → 6 | Announced: 1 → 4
 Group 8,2,Cameron Green,Australia,AUS,AR,AR,1,0,1,0,36.0,0,2,72.0,PLAYING_XI,0,0,1,2,2026-02-13,1512737,0,0,0,0,Duck: 0 → -2 | Wickets: 1 → 30 | Dot balls: 4 → 4 | Announced: 1 → 4
 Group 8,2,Liam Dawson,England,ENG,AR,AR,0,1,0,0,11.0,0,1,11.0,PLAYING_XI,0,1,1,2,2026-02-11,1512733,0,0,0,0,Runs: 1 → 1 | Dot balls: 6 → 6 | Announced: 1 → 4
 Group 8,2,Abrar Ahmed,Pakistan,PAK,BOWL,BOWL,1,0,0,0,51.0,0,1,51.0,PLAYING_XI,0,0,1,2,2026-02-10,1512730,0,0,0,0,Wickets: 1 → 30 | LBW/Bowled bonus: 1 → 8 | Dot balls: 9 → 9 | Announced: 1 → 4
 Group 8,2,Matheesha Pathirana,Sri Lanka,SL,BOWL,BOWL,1,0,0,1,20.0,0,1,20.0,PLAYING_XI,0,0,1,2,2026-02-12,1512734,0,0,0,0,Dot balls: 10 → 10 | Economy Rate: 3.67 → 6 | Announced: 1 → 4
-Group 8,2,Mujeeb Ur Rahman,Afghanistan,AFG,BOWL,BOWL,1,0,0,0,17.0,0,1,17.0,PLAYING_XI,0,0,1,2,2026-02-11,1512731,0,0,0,0,Manual Entry
+Group 8,2,Mujeeb Ur Rahman,Afghanistan,AFG,BOWL,BOWL,1,0,0,0,17.0,0,1,17.0,PLAYING_XI,0,0,1,2,2026-02-11,1512731,0,0,0,0,DID NOT PLAY
 Group 8,2,Shaheen Afridi,Pakistan,PAK,BOWL,BOWL,1,0,0,0,79.0,0,1,79.0,PLAYING_XI,0,0,1,2,2026-02-10,1512730,0,0,0,0,Runs: 9 → 9 | Sixes: 1 → 6 | Wickets: 1 → 30 | LBW/Bowled bonus: 1 → 8 | Dot balls: 8 → 8 | Catches: 2 → 16 | Economy Rate: 10.5 → -2 | Announced: 1 → 4
 Group 8,2,Devon Conway,New Zealand,NZ,WK,WK,1,0,0,0,0.0,0,1,0.0,SUB,1,0,0,2,2026-02-10,1512729,0,0,0,0,DID NOT PLAY
 Group 8,2,Cooper Connolly,Australia,AUS,AR,AR,1,0,0,0,0.0,0,1,0.0,SUB,1,0,0,2,2026-02-13,1512737,0,0,0,0,DID NOT PLAY
@@ -251,7 +251,7 @@ Group 8,2,Roston Chase,West Indies,WI,AR,AR,0,6,0,0,151.0,0,1,0.0,SUB,0,0,0,2,20
 Group 8,2,Luke Wood,England,ENG,BOWL,BOWL,0,2,0,0,0.0,0,1,0.0,SUB,0,0,0,2,2026-02-11,1512733,0,0,0,0,DID NOT PLAY
 Group 1,3,Tim Seifert,New Zealand,NZ,WK,WK,1,0,1,0,27.0,0,2,54.0,PLAYING_XI,0,0,1,3,2026-02-14,1512742,0,0,0,0,Runs: 13 → 13 | Fours: 1 → 4 | Sixes: 1 → 6 | Announced: 1 → 4
 Group 1,3,Brandon King,West Indies,WI,BAT,BAT,1,0,0,0,42.0,0,1,42.0,PLAYING_XI,0,0,1,3,2026-02-15,1512743,0,0,0,0,Runs: 22 → 22 | Fours: 4 → 16 | Announced: 1 → 4
-Group 1,3,Sediqullah Atal,Afghanistan,AFG,BAT,BAT,1,0,0,0,30.0,0,1,30.0,PLAYING_XI,0,0,1,3,2026-02-16,1512746,0,0,0,0,Manual Entry
+Group 1,3,Sediqullah Atal,Afghanistan,AFG,BAT,BAT,1,0,0,0,30.0,0,1,30.0,PLAYING_XI,0,0,1,3,2026-02-16,1512746,0,0,0,0,DID NOT PLAY
 Group 1,3,Tristan Stubbs,South Africa,SA,WK,BAT,1,0,0,0,0.0,0,1,0.0,PLAYING_XI,0,0,1,3,2026-02-14,1512742,1,0,0,0,DID NOT PLAY
 Group 1,3,Axar Patel,India,IND,AR,AR,1,0,0,1,83.0,0,1,83.0,PLAYING_XI,0,0,1,3,2026-02-15,1512745,0,0,0,0,Duck: 0 → -2 | Wickets: 2 → 60 | LBW/Bowled bonus: 1 → 8 | Dot balls: 13 → 13 | Announced: 1 → 4
 Group 1,3,Jason Holder,West Indies,WI,AR,AR,1,0,0,0,195.0,50,1,195.0,PLAYING_XI,0,0,1,3,2026-02-15,1512743,0,0,0,0,Wickets: 4 → 120 | 3-Wicket bonus: 4 → 8 | Dot balls: 11 → 11 | Economy Rate: 6.75 → 2 | Announced: 1 → 4
@@ -278,15 +278,15 @@ Group 2,3,Matthew Forde,West Indies,WI,BOWL,BOWL,0,1,0,0,94.0,0,1,94.0,PLAYING_X
 Group 2,3,Matt Renshaw,Australia,AUS,BAT,BAT,0,4,0,0,0.0,0,1,0.0,SUB,0,0,0,3,2026-02-16,1512748,0,0,0,0,DID NOT PLAY
 Group 2,3,Quentin Sampson,West Indies,WI,AR,AR,0,3,0,0,0.0,0,1,0.0,SUB,0,0,0,3,2026-02-15,1512743,0,0,0,0,DID NOT PLAY
 Group 2,3,Arshdeep Singh,India,IND,BOWL,BOWL,1,0,0,1,0.0,0,1,0.0,SUB,1,0,0,3,2026-02-15,1512745,0,0,0,0,DID NOT PLAY
-Group 2,3,Fazalhaq Farooqi,Afghanistan,AFG,BOWL,BOWL,0,2,0,0,0.0,0,1,0.0,SUB,0,0,0,3,2026-02-16,1512746,0,0,0,0,Manual Entry
+Group 2,3,Fazalhaq Farooqi,Afghanistan,AFG,BOWL,BOWL,0,2,0,0,0.0,0,1,0.0,SUB,0,0,0,3,2026-02-16,1512746,0,0,0,0,DID NOT PLAY
 Group 3,3,Jos Buttler,England,ENG,WK,WK,1,0,0,1,13.0,0,1,13.0,PLAYING_XI,0,0,1,3,2026-02-14,1512741,0,0,0,0,Runs: 3 → 3 | Runout - indirect: 1 → 6 | Announced: 1 → 4
 Group 3,3,David Miller,South Africa,SA,BAT,BAT,1,0,0,0,48.0,0,1,48.0,PLAYING_XI,0,0,1,3,2026-02-14,1512742,0,0,0,0,Runs: 24 → 24 | Fours: 1 → 4 | Sixes: 1 → 6 | Catches: 1 → 8 | Strike Rate: 141.18 → 2 | Announced: 1 → 4
-Group 3,3,Ibrahim Zadran,Afghanistan,AFG,BAT,BAT,1,0,0,0,103.0,0,1,103.0,PLAYING_XI,0,0,1,3,2026-02-16,1512746,0,0,0,0,Manual Entry
+Group 3,3,Ibrahim Zadran,Afghanistan,AFG,BAT,BAT,1,0,0,0,103.0,0,1,103.0,PLAYING_XI,0,0,1,3,2026-02-16,1512746,0,0,0,0,DID NOT PLAY
 Group 3,3,Pavan Rathnayake,Sri Lanka,SL,BAT,BAT,1,0,0,0,66.0,0,1,66.0,PLAYING_XI,0,0,1,3,2026-02-16,1512748,0,0,0,0,Runs: 28 → 28 | Fours: 6 → 24 | Runs milestone bonus: 28 → 4 | Strike Rate: 186.67 → 6 | Announced: 1 → 4
-Group 3,3,Azmatullah Omarzai,Afghanistan,AFG,AR,AR,1,0,0,0,337.0,50,1,337.0,PLAYING_XI,0,0,1,3,2026-02-16,1512746,0,0,0,0,Manual Entry
+Group 3,3,Azmatullah Omarzai,Afghanistan,AFG,AR,AR,1,0,0,0,337.0,50,1,337.0,PLAYING_XI,0,0,1,3,2026-02-16,1512746,0,0,0,0,DID NOT PLAY
 Group 3,3,Dunith Wellalage,Sri Lanka,SL,AR,AR,1,0,0,0,47.0,0,1,47.0,PLAYING_XI,0,0,1,3,2026-02-16,1512748,0,0,0,0,Wickets: 1 → 30 | Dot balls: 5 → 5 | Catches: 1 → 8 | Announced: 1 → 4
-Group 3,3,Gulbadin Naib,Afghanistan,AFG,AR,AR,1,0,0,0,28.0,0,1,28.0,PLAYING_XI,0,0,1,3,2026-02-16,1512746,0,0,0,0,Manual Entry
-Group 3,3,Rashid Khan,Afghanistan,AFG,AR,AR,1,0,0,0,55.0,0,1,55.0,PLAYING_XI,0,0,1,3,2026-02-16,1512746,0,0,0,0,Manual Entry
+Group 3,3,Gulbadin Naib,Afghanistan,AFG,AR,AR,1,0,0,0,28.0,0,1,28.0,PLAYING_XI,0,0,1,3,2026-02-16,1512746,0,0,0,0,DID NOT PLAY
+Group 3,3,Rashid Khan,Afghanistan,AFG,AR,AR,1,0,0,0,55.0,0,1,55.0,PLAYING_XI,0,0,1,3,2026-02-16,1512746,0,0,0,0,DID NOT PLAY
 Group 3,3,Akeal Hosein,West Indies,WI,BOWL,BOWL,1,0,0,0,51.0,0,1,51.0,PLAYING_XI,0,0,1,3,2026-02-15,1512743,0,0,0,0,Wickets: 1 → 30 | LBW/Bowled bonus: 1 → 8 | Dot balls: 9 → 9 | Announced: 1 → 4
 Group 3,3,Jasprit Bumrah,India,IND,BOWL,BOWL,1,0,1,0,77.0,0,2,154.0,PLAYING_XI,0,0,1,3,2026-02-15,1512745,0,0,0,0,Wickets: 2 → 60 | LBW/Bowled bonus: 1 → 8 | Dot balls: 5 → 5 | Announced: 1 → 4
 Group 3,3,Jofra Archer,England,ENG,BOWL,BOWL,1,0,0,0,80.0,0,1,80.0,PLAYING_XI,0,0,1,3,2026-02-14,1512741,0,0,0,0,Wickets: 2 → 60 | Dot balls: 14 → 14 | Economy Rate: 6.0 → 2 | Announced: 1 → 4
@@ -309,7 +309,7 @@ Group 4,3,Johnson Charles,West Indies,WI,WK,WK,1,0,0,0,0.0,0,1,0.0,SUB,1,0,0,3,2
 Group 4,3,Jason Smith,South Africa,SA,BAT,BAT,0,2,0,0,0.0,0,1,0.0,SUB,0,0,0,3,2026-02-14,1512742,0,0,0,0,DID NOT PLAY
 Group 4,3,Jayden Seales,West Indies,WI,BOWL,BOWL,0,4,0,0,0.0,0,1,0.0,SUB,0,0,0,3,2026-02-15,1512743,0,0,0,0,DID NOT PLAY
 Group 4,3,Matthew Kuhnemann,Australia,AUS,BOWL,BOWL,0,3,0,0,0.0,0,1,0.0,SUB,0,0,0,3,2026-02-16,1512748,0,0,0,0,DID NOT PLAY
-Group 5,3,Rahmanullah Gurbaz,Afghanistan,AFG,WK,WK,1,0,0,0,36.0,0,1,36.0,PLAYING_XI,0,0,1,3,2026-02-16,1512746,0,0,0,0,Manual Entry
+Group 5,3,Rahmanullah Gurbaz,Afghanistan,AFG,WK,WK,1,0,0,0,36.0,0,1,36.0,PLAYING_XI,0,0,1,3,2026-02-16,1512746,0,0,0,0,DID NOT PLAY
 Group 5,3,Mark Chapman,New Zealand,NZ,BAT,BAT,1,0,0,0,98.0,0,1,98.0,PLAYING_XI,0,0,1,3,2026-02-14,1512742,0,0,0,0,Runs: 48 → 48 | Fours: 6 → 24 | Sixes: 2 → 12 | Runs milestone bonus: 48 → 4 | Strike Rate: 184.62 → 6 | Announced: 1 → 4
 Group 5,3,Sherfane Rutherford,West Indies,WI,BAT,BAT,1,0,0,0,0.0,0,1,0.0,PLAYING_XI,0,0,1,3,2026-02-15,1512743,0,0,0,0,DID NOT PLAY
 Group 5,3,Tilak Varma,India,IND,BAT,BAT,1,0,0,0,86.0,0,1,86.0,PLAYING_XI,0,0,1,3,2026-02-15,1512745,0,0,0,0,Runs: 25 → 25 | Fours: 2 → 8 | Sixes: 1 → 6 | Runs milestone bonus: 25 → 4 | Wickets: 1 → 30 | Dot balls: 5 → 5 | Economy Rate: 5.5 → 4 | Announced: 1 → 4
@@ -334,10 +334,10 @@ Group 6,3,Sam Curran,England,ENG,AR,AR,1,0,0,0,107.0,0,1,107.0,PLAYING_XI,0,0,1,
 Group 6,3,Adam Zampa,Australia,AUS,BOWL,BOWL,1,0,0,1,9.0,0,1,9.0,PLAYING_XI,0,0,1,3,2026-02-16,1512748,0,0,0,0,Runs: 1 → 1 | Dot balls: 6 → 6 | Economy Rate: 10.25 → -2 | Announced: 1 → 4
 Group 6,3,Lockie Ferguson,New Zealand,NZ,BOWL,BOWL,1,0,0,0,47.0,0,1,47.0,PLAYING_XI,0,0,1,3,2026-02-14,1512742,0,0,0,0,Wickets: 1 → 30 | LBW/Bowled bonus: 1 → 8 | Dot balls: 7 → 7 | Economy Rate: 10.42 → -2 | Announced: 1 → 4
 Group 6,3,Lungi Ngidi,South Africa,SA,BOWL,BOWL,1,0,0,0,42.0,0,1,42.0,PLAYING_XI,0,0,1,3,2026-02-14,1512742,0,0,0,0,Wickets: 1 → 30 | Dot balls: 8 → 8 | Announced: 1 → 4
-Group 6,3,Noor Ahmad,Afghanistan,AFG,BOWL,BOWL,1,0,0,0,5.0,0,1,5.0,PLAYING_XI,0,0,1,3,2026-02-16,1512746,0,0,0,0,Manual Entry
+Group 6,3,Noor Ahmad,Afghanistan,AFG,BOWL,BOWL,1,0,0,0,5.0,0,1,5.0,PLAYING_XI,0,0,1,3,2026-02-16,1512746,0,0,0,0,DID NOT PLAY
 Group 6,3,Dushan Hemantha,Sri Lanka,SL,AR,AR,0,2,0,0,123.0,0,1,0.0,SUB,0,0,0,3,2026-02-16,1512748,0,0,0,0,Wickets: 3 → 90 | LBW/Bowled bonus: 1 → 8 | 3-Wicket bonus: 3 → 4 | Dot balls: 9 → 9 | Catches: 1 → 8 | Announced: 1 → 4
 Group 6,3,James Neesham,New Zealand,NZ,AR,AR,0,3,0,0,76.0,0,1,0.0,SUB,0,0,0,3,2026-02-14,1512742,0,0,0,0,Runs: 23 → 23 | Fours: 3 → 12 | Wickets: 1 → 30 | Dot balls: 3 → 3 | Strike Rate: 153.33 → 4 | Announced: 1 → 4
-Group 6,3,Mohammad Nabi,Afghanistan,AFG,AR,AR,0,4,0,0,7.0,0,1,0.0,SUB,0,0,0,3,2026-02-16,1512746,0,0,0,0,Manual Entry
+Group 6,3,Mohammad Nabi,Afghanistan,AFG,AR,AR,0,4,0,0,7.0,0,1,0.0,SUB,0,0,0,3,2026-02-16,1512746,0,0,0,0,DID NOT PLAY
 Group 6,3,Romario Shepherd,West Indies,WI,AR,AR,1,0,0,0,0.0,0,1,0.0,SUB,1,0,0,3,2026-02-15,1512743,0,0,0,0,DID NOT PLAY
 Group 6,3,Keshav Maharaj,South Africa,SA,BOWL,BOWL,0,5,0,0,48.0,0,1,0.0,SUB,0,0,0,3,2026-02-14,1512742,0,0,0,0,Wickets: 1 → 30 | LBW/Bowled bonus: 1 → 8 | Dot balls: 6 → 6 | Announced: 1 → 4
 Group 7,3,Josh Inglis,Australia,AUS,WK,WK,1,0,0,0,47.0,0,1,47.0,PLAYING_XI,0,0,1,3,2026-02-16,1512748,0,0,0,0,Runs: 27 → 27 | Fours: 3 → 12 | Runs milestone bonus: 27 → 4 | Announced: 1 → 4
@@ -366,17 +366,17 @@ Group 8,3,Cooper Connolly,Australia,AUS,AR,AR,0,2,0,0,21.0,0,1,21.0,PLAYING_XI,0
 Group 8,3,Roston Chase,West Indies,WI,AR,AR,1,0,0,0,50.0,0,1,50.0,PLAYING_XI,0,0,1,3,2026-02-15,1512743,0,0,1,0,Wickets: 1 → 30 | LBW/Bowled bonus: 1 → 8 | Dot balls: 4 → 4 | Economy Rate: 5.0 → 4 | Announced: 1 → 4
 Group 8,3,Abrar Ahmed,Pakistan,PAK,BOWL,BOWL,1,0,0,0,3.0,0,1,3.0,PLAYING_XI,0,0,1,3,2026-02-15,1512745,0,0,1,0,Dot balls: 5 → 5 | Economy Rate: 12.67 → -6 | Announced: 1 → 4
 Group 8,3,Matheesha Pathirana,Sri Lanka,SL,BOWL,BOWL,1,0,0,0,6.0,0,1,6.0,PLAYING_XI,0,0,1,3,2026-02-16,1512748,0,0,1,0,Dot balls: 2 → 2 | Announced: 1 → 4
-Group 8,3,Mujeeb Ur Rahman,Afghanistan,AFG,BOWL,BOWL,1,0,0,0,92.0,0,2,184.0,PLAYING_XI,0,0,1,3,2026-02-16,1512746,0,0,1,0,Manual Entry
+Group 8,3,Mujeeb Ur Rahman,Afghanistan,AFG,BOWL,BOWL,1,0,0,0,92.0,0,2,184.0,PLAYING_XI,0,0,1,3,2026-02-16,1512746,0,0,1,0,DID NOT PLAY
 Group 8,3,Shaheen Afridi,Pakistan,PAK,BOWL,BOWL,0,1,0,0,76.0,0,1,76.0,PLAYING_XI,0,1,1,3,2026-02-15,1512745,0,0,1,0,Runs: 23 → 23 | Fours: 2 → 8 | Sixes: 1 → 6 | Wickets: 1 → 30 | Dot balls: 3 → 3 | Catches: 1 → 8 | Economy Rate: 15.5 → -6 | Announced: 1 → 4
 Group 8,3,Devon Conway,New Zealand,NZ,WK,WK,1,0,0,0,0.0,0,1,0.0,SUB,1,0,0,3,2026-02-14,1512742,0,0,1,0,DID NOT PLAY
-Group 8,3,Darwish Rasooli,Afghanistan,AFG,BAT,BAT,0,5,0,0,61.0,0,1,0.0,SUB,0,0,0,3,2026-02-16,1512746,0,0,1,0,Manual Entry
+Group 8,3,Darwish Rasooli,Afghanistan,AFG,BAT,BAT,0,5,0,0,61.0,0,1,0.0,SUB,0,0,0,3,2026-02-16,1512746,0,0,1,0,DID NOT PLAY
 Group 8,3,Dasun Shanaka,Sri Lanka,SL,AR,AR,0,6,0,0,7.0,0,1,0.0,SUB,0,0,0,3,2026-02-16,1512748,0,0,1,0,Dot balls: 3 → 3 | Announced: 1 → 4
 Group 8,3,Liam Dawson,England,ENG,AR,AR,0,3,0,0,71.0,0,1,0.0,SUB,0,0,0,3,2026-02-14,1512741,0,0,1,0,Wickets: 2 → 60 | Dot balls: 7 → 7 | Announced: 1 → 4
 Group 8,3,Rehan Ahmed,England,ENG,AR,AR,0,4,0,0,0.0,0,1,0.0,SUB,0,0,0,3,2026-02-14,1512741,0,0,1,0,DID NOT PLAY
 Group 8,3,Luke Wood,England,ENG,BOWL,BOWL,1,0,0,0,0.0,0,1,0.0,SUB,1,0,0,3,2026-02-14,1512741,0,0,1,0,DID NOT PLAY
 Group 1,4,Tim Seifert,New Zealand,NZ,WK,WK,1,0,0,1,12.0,0,2,24.0,PLAYING_XI,0,0,1,4,2026-02-17,1512749,0,0,0,0,Runs: 6 → 6 | Fours: 1 → 4 | Strike Rate: 60.0 → -2 | Announced: 1 → 4
 Group 1,4,Brandon King,West Indies,WI,BAT,BAT,1,0,0,0,8.0,0,1,8.0,PLAYING_XI,0,0,1,4,2026-02-19,1512755,0,0,0,0,Runs: 4 → 4 | Announced: 1 → 4
-Group 1,4,Sediqullah Atal,Afghanistan,AFG,BAT,BAT,0,3,0,0,74.0,0,1,74.0,PLAYING_XI,0,1,1,4,2026-02-19,1512757,0,0,0,0,Manual Entry
+Group 1,4,Sediqullah Atal,Afghanistan,AFG,BAT,BAT,0,3,0,0,74.0,0,1,74.0,PLAYING_XI,0,1,1,4,2026-02-19,1512757,0,0,0,0,DID NOT PLAY
 Group 1,4,Tristan Stubbs,South Africa,SA,WK,BAT,1,0,0,0,10.0,0,1,10.0,PLAYING_XI,0,0,1,4,2026-02-18,1512752,1,0,0,0,Runs: 6 → 6 | Announced: 1 → 4
 Group 1,4,Jason Holder,West Indies,WI,AR,AR,1,0,0,0,40.0,0,1,40.0,PLAYING_XI,0,0,1,4,2026-02-19,1512755,0,0,0,0,Runs: 9 → 9 | Sixes: 1 → 6 | Dot balls: 11 → 11 | Catches: 1 → 8 | Economy Rate: 6.33 → 2 | Announced: 1 → 4
 Group 1,4,Marco Jansen,South Africa,SA,AR,AR,1,0,1,0,0.0,0,1,0.0,PLAYING_XI,0,0,1,4,2026-02-18,1512752,0,0,0,0,DID NOT PLAY
@@ -403,14 +403,14 @@ Group 2,4,Matthew Forde,West Indies,WI,BOWL,BOWL,1,0,0,0,156.0,0,1,156.0,PLAYING
 Group 2,4,Fakhar Zaman,Pakistan,PAK,BAT,BAT,0,2,0,0,0.0,0,1,0.0,SUB,0,0,0,4,2026-02-18,1512753,0,0,0,0,DID NOT PLAY
 Group 2,4,Daryl Mitchell,New Zealand,NZ,AR,AR,0,1,0,0,0.0,0,1,0.0,SUB,0,0,0,4,2026-02-17,1512749,0,0,0,0,DID NOT PLAY
 Group 2,4,Quentin Sampson,West Indies,WI,AR,AR,0,3,0,0,0.0,0,1,0.0,SUB,0,0,0,4,2026-02-19,1512755,0,0,0,0,DID NOT PLAY
-Group 2,4,Fazalhaq Farooqi,Afghanistan,AFG,BOWL,BOWL,0,4,0,0,0.0,0,1,0.0,SUB,0,0,0,4,2026-02-19,1512757,0,0,0,0,Manual Entry
+Group 2,4,Fazalhaq Farooqi,Afghanistan,AFG,BOWL,BOWL,0,4,0,0,0.0,0,1,0.0,SUB,0,0,0,4,2026-02-19,1512757,0,0,0,0,DID NOT PLAY
 Group 3,4,Jos Buttler,England,ENG,WK,WK,1,0,0,1,23.0,0,1,23.0,PLAYING_XI,0,0,1,4,2026-02-16,1512747,0,0,0,0,Runs: 3 → 3 | Catches: 2 → 16 | Announced: 1 → 4
-Group 3,4,Ibrahim Zadran,Afghanistan,AFG,BAT,BAT,1,0,0,0,281.0,50,1,281.0,PLAYING_XI,0,0,1,4,2026-02-19,1512757,0,0,0,0,Manual Entry
+Group 3,4,Ibrahim Zadran,Afghanistan,AFG,BAT,BAT,1,0,0,0,281.0,50,1,281.0,PLAYING_XI,0,0,1,4,2026-02-19,1512757,0,0,0,0,DID NOT PLAY
 Group 3,4,Pavan Rathnayake,Sri Lanka,SL,BAT,BAT,1,0,0,0,82.0,0,1,82.0,PLAYING_XI,0,0,1,4,2026-02-19,1512756,0,0,0,0,Runs: 44 → 44 | Fours: 3 → 12 | Sixes: 2 → 12 | Runs milestone bonus: 44 → 4 | Strike Rate: 176.0 → 6 | Announced: 1 → 4
-Group 3,4,Azmatullah Omarzai,Afghanistan,AFG,AR,AR,1,0,0,0,68.0,0,1,68.0,PLAYING_XI,0,0,1,4,2026-02-19,1512757,0,0,0,0,Manual Entry
+Group 3,4,Azmatullah Omarzai,Afghanistan,AFG,AR,AR,1,0,0,0,68.0,0,1,68.0,PLAYING_XI,0,0,1,4,2026-02-19,1512757,0,0,0,0,DID NOT PLAY
 Group 3,4,Dunith Wellalage,Sri Lanka,SL,AR,AR,1,0,0,0,78.0,0,1,78.0,PLAYING_XI,0,0,1,4,2026-02-19,1512756,0,0,0,0,Runs: 15 → 15 | Fours: 3 → 12 | Wickets: 1 → 30 | Dot balls: 7 → 7 | Catches: 1 → 8 | Economy Rate: 6.75 → 2 | Announced: 1 → 4
-Group 3,4,Gulbadin Naib,Afghanistan,AFG,AR,AR,1,0,0,0,5.0,0,1,5.0,PLAYING_XI,0,0,1,4,2026-02-19,1512757,0,0,0,0,Manual Entry
-Group 3,4,Rashid Khan,Afghanistan,AFG,AR,AR,1,0,0,0,92.0,0,1,92.0,PLAYING_XI,0,0,1,4,2026-02-19,1512757,0,0,0,0,Manual Entry
+Group 3,4,Gulbadin Naib,Afghanistan,AFG,AR,AR,1,0,0,0,5.0,0,1,5.0,PLAYING_XI,0,0,1,4,2026-02-19,1512757,0,0,0,0,DID NOT PLAY
+Group 3,4,Rashid Khan,Afghanistan,AFG,AR,AR,1,0,0,0,92.0,0,1,92.0,PLAYING_XI,0,0,1,4,2026-02-19,1512757,0,0,0,0,DID NOT PLAY
 Group 3,4,Akeal Hosein,West Indies,WI,BOWL,BOWL,0,1,0,0,41.0,0,1,41.0,PLAYING_XI,0,1,1,4,2026-02-19,1512755,0,0,0,0,Wickets: 1 → 30 | Dot balls: 7 → 7 | Announced: 1 → 4
 Group 3,4,Jasprit Bumrah,India,IND,BOWL,BOWL,1,0,1,0,57.0,0,2,114.0,PLAYING_XI,0,0,1,4,2026-02-18,1512754,0,0,0,0,Wickets: 1 → 30 | LBW/Bowled bonus: 1 → 8 | Dot balls: 11 → 11 | Economy Rate: 5.67 → 4 | Announced: 1 → 4
 Group 3,4,Jofra Archer,England,ENG,BOWL,BOWL,1,0,0,0,79.0,0,1,79.0,PLAYING_XI,0,0,1,4,2026-02-16,1512747,0,0,0,0,Runs: 1 → 1 | Wickets: 2 → 60 | Dot balls: 14 → 14 | Announced: 1 → 4
@@ -434,7 +434,7 @@ Group 4,4,Johnson Charles,West Indies,WI,WK,WK,1,0,0,0,0.0,0,1,0.0,SUB,1,0,0,4,2
 Group 4,4,Jayden Seales,West Indies,WI,BOWL,BOWL,0,3,0,0,0.0,0,1,0.0,SUB,0,0,0,4,2026-02-19,1512755,0,0,0,0,DID NOT PLAY
 Group 4,4,Josh Tongue,England,ENG,BOWL,BOWL,0,4,0,0,0.0,0,1,0.0,SUB,0,0,0,4,2026-02-16,1512747,0,0,0,0,DID NOT PLAY
 Group 4,4,Kuldeep Yadav,India,IND,BOWL,BOWL,1,0,0,0,0.0,0,1,0.0,SUB,1,0,0,4,2026-02-18,1512754,0,0,0,0,DID NOT PLAY
-Group 5,4,Rahmanullah Gurbaz,Afghanistan,AFG,WK,WK,1,0,0,0,60.0,0,1,60.0,PLAYING_XI,0,0,1,4,2026-02-19,1512757,0,0,0,0,Manual Entry
+Group 5,4,Rahmanullah Gurbaz,Afghanistan,AFG,WK,WK,1,0,0,0,60.0,0,1,60.0,PLAYING_XI,0,0,1,4,2026-02-19,1512757,0,0,0,0,DID NOT PLAY
 Group 5,4,Sherfane Rutherford,West Indies,WI,BAT,BAT,1,0,0,0,46.0,0,1,46.0,PLAYING_XI,0,0,1,4,2026-02-19,1512755,0,0,0,0,Runs: 24 → 24 | Fours: 2 → 8 | Sixes: 1 → 6 | Strike Rate: 160.0 → 4 | Announced: 1 → 4
 Group 5,4,Tilak Varma,India,IND,BAT,BAT,1,0,0,0,57.0,0,1,57.0,PLAYING_XI,0,0,1,4,2026-02-18,1512754,0,0,0,0,Runs: 31 → 31 | Fours: 3 → 12 | Sixes: 1 → 6 | Runs milestone bonus: 31 → 4 | Announced: 1 → 4
 Group 5,4,Travis Head,Australia,AUS,BAT,BAT,1,0,1,0,68.0,0,2,136.0,PLAYING_XI,0,0,1,4,2026-02-20,1512758,0,0,0,0,Runs: 32 → 32 | Fours: 6 → 24 | Runs milestone bonus: 32 → 4 | Strike Rate: 168.42 → 4 | Announced: 1 → 4
@@ -455,7 +455,7 @@ Group 6,4,Dewald Brevis,South Africa,SA,BAT,BAT,1,0,0,0,68.0,0,1,68.0,PLAYING_XI
 Group 6,4,Dushan Hemantha,Sri Lanka,SL,AR,AR,1,0,0,0,68.0,0,1,68.0,PLAYING_XI,0,0,1,4,2026-02-19,1512756,0,0,0,0,Duck: 0 → -2 | Wickets: 2 → 60 | Dot balls: 6 → 6 | Announced: 1 → 4
 Group 6,4,Jacob Bethell,England,ENG,AR,AR,1,0,1,0,41.0,0,2,82.0,PLAYING_XI,0,0,1,4,2026-02-16,1512747,0,0,0,0,Runs: 23 → 23 | Fours: 2 → 8 | Sixes: 1 → 6 | Announced: 1 → 4
 Group 6,4,James Neesham,New Zealand,NZ,AR,AR,1,0,0,0,51.0,0,1,51.0,PLAYING_XI,0,0,1,4,2026-02-17,1512749,0,0,0,0,Wickets: 1 → 30 | LBW/Bowled bonus: 1 → 8 | Dot balls: 9 → 9 | Announced: 1 → 4
-Group 6,4,Mohammad Nabi,Afghanistan,AFG,AR,AR,0,4,0,0,155.0,0,1,155.0,PLAYING_XI,0,1,1,4,2026-02-19,1512757,0,0,0,0,Manual Entry
+Group 6,4,Mohammad Nabi,Afghanistan,AFG,AR,AR,0,4,0,0,155.0,0,1,155.0,PLAYING_XI,0,1,1,4,2026-02-19,1512757,0,0,0,0,DID NOT PLAY
 Group 6,4,Mohammad Nawaz,Pakistan,PAK,AR,AR,1,0,0,0,51.0,0,1,51.0,PLAYING_XI,0,0,1,4,2026-02-18,1512753,0,0,0,0,Wickets: 1 → 30 | Dot balls: 13 → 13 | Economy Rate: 5.5 → 4 | Announced: 1 → 4
 Group 6,4,Sam Curran,England,ENG,AR,AR,1,0,0,0,149.0,0,1,149.0,PLAYING_XI,0,0,1,4,2026-02-16,1512747,0,0,0,0,Runs: 25 → 25 | Sixes: 2 → 12 | Runs milestone bonus: 25 → 4 | Wickets: 3 → 90 | 3-Wicket bonus: 3 → 4 | Dot balls: 8 → 8 | Strike Rate: 131.58 → 2 | Announced: 1 → 4
 Group 6,4,Adam Zampa,Australia,AUS,BOWL,BOWL,1,0,0,1,217.0,50,1,217.0,PLAYING_XI,0,0,1,4,2026-02-20,1512758,0,0,0,0,Wickets: 4 → 120 | LBW/Bowled bonus: 3 → 24 | 3-Wicket bonus: 4 → 8 | Dot balls: 9 → 9 | Economy Rate: 6.3 → 2 | Announced: 1 → 4
@@ -464,7 +464,7 @@ Group 6,4,Babar Azam,Pakistan,PAK,BAT,BAT,1,0,0,0,0.0,0,1,0.0,SUB,1,0,0,4,2026-0
 Group 6,4,Romario Shepherd,West Indies,WI,AR,AR,0,1,0,0,0.0,0,1,0.0,SUB,0,0,0,4,2026-02-19,1512755,0,0,0,0,DID NOT PLAY
 Group 6,4,Lockie Ferguson,New Zealand,NZ,BOWL,BOWL,0,3,0,0,0.0,0,1,0.0,SUB,0,0,0,4,2026-02-17,1512749,0,0,0,0,DID NOT PLAY
 Group 6,4,Lungi Ngidi,South Africa,SA,BOWL,BOWL,0,2,0,0,0.0,0,1,0.0,SUB,0,0,0,4,2026-02-18,1512752,0,0,0,0,DID NOT PLAY
-Group 6,4,Noor Ahmad,Afghanistan,AFG,BOWL,BOWL,0,5,0,0,0.0,0,1,0.0,SUB,0,0,0,4,2026-02-19,1512757,0,0,0,0,Manual Entry
+Group 6,4,Noor Ahmad,Afghanistan,AFG,BOWL,BOWL,0,5,0,0,0.0,0,1,0.0,SUB,0,0,0,4,2026-02-19,1512757,0,0,0,0,DID NOT PLAY
 Group 7,4,Kusal Mendis,Sri Lanka,SL,WK,WK,1,0,0,0,18.0,0,1,18.0,PLAYING_XI,0,0,1,4,2026-02-19,1512756,0,0,0,0,Runs: 14 → 14 | Announced: 1 → 4
 Group 7,4,Finn Allen,New Zealand,NZ,BAT,BAT,1,0,0,0,39.0,0,1,39.0,PLAYING_XI,0,0,1,4,2026-02-17,1512749,0,0,0,0,Runs: 21 → 21 | Fours: 2 → 8 | Sixes: 1 → 6 | Announced: 1 → 4
 Group 7,4,Suryakumar Yadav,India,IND,BAT,BAT,1,0,0,0,56.0,0,1,56.0,PLAYING_XI,0,0,1,4,2026-02-18,1512754,0,0,0,0,Runs: 34 → 34 | Fours: 2 → 8 | Sixes: 1 → 6 | Runs milestone bonus: 34 → 4 | Announced: 1 → 4
@@ -484,7 +484,7 @@ Group 7,4,Dushmantha Chameera,Sri Lanka,SL,BOWL,BOWL,1,0,0,0,0.0,0,1,0.0,SUB,1,0
 Group 7,4,Kyle Jamieson,New Zealand,NZ,BOWL,BOWL,0,4,0,0,40.0,0,1,0.0,SUB,0,0,0,4,2026-02-17,1512749,0,0,0,0,Wickets: 1 → 30 | Dot balls: 8 → 8 | Economy Rate: 10.25 → -2 | Announced: 1 → 4
 Group 8,4,Quinton de Kock,South Africa,SA,WK,WK,1,0,1,0,38.0,0,2,76.0,PLAYING_XI,0,0,1,4,2026-02-18,1512752,0,0,0,0,Runs: 14 → 14 | Fours: 3 → 12 | Catches: 1 → 8 | Announced: 1 → 4
 Group 8,4,Ryan Rickelton,South Africa,SA,WK,WK,1,0,0,0,68.0,0,1,68.0,PLAYING_XI,0,0,1,4,2026-02-18,1512752,0,0,0,0,Runs: 30 → 30 | Fours: 3 → 12 | Sixes: 2 → 12 | Runs milestone bonus: 30 → 4 | Strike Rate: 187.5 → 6 | Announced: 1 → 4
-Group 8,4,Darwish Rasooli,Afghanistan,AFG,BAT,BAT,0,4,0,0,16.0,0,1,16.0,PLAYING_XI,0,1,1,4,2026-02-19,1512757,0,0,0,0,Manual Entry
+Group 8,4,Darwish Rasooli,Afghanistan,AFG,BAT,BAT,0,4,0,0,16.0,0,1,16.0,PLAYING_XI,0,1,1,4,2026-02-19,1512757,0,0,0,0,DID NOT PLAY
 Group 8,4,Harry Brook,England,ENG,BAT,BAT,1,0,0,0,36.0,0,1,36.0,PLAYING_XI,0,0,1,4,2026-02-16,1512747,0,0,0,0,Runs: 14 → 14 | Fours: 1 → 4 | Sixes: 1 → 6 | Catches: 1 → 8 | Announced: 1 → 4
 Group 8,4,Shimron Hetmyer,West Indies,WI,BAT,BAT,1,0,0,0,5.0,0,1,5.0,PLAYING_XI,0,0,1,4,2026-02-19,1512755,0,0,0,0,Runs: 1 → 1 | Announced: 1 → 4
 Group 8,4,Cameron Green,Australia,AUS,AR,AR,1,0,0,1,22.0,0,1,22.0,PLAYING_XI,0,0,1,4,2026-02-20,1512758,0,0,0,0,Dot balls: 6 → 6 | Catches: 1 → 8 | Economy Rate: 5.5 → 4 | Announced: 1 → 4
@@ -492,7 +492,7 @@ Group 8,4,Dasun Shanaka,Sri Lanka,SL,AR,AR,0,3,0,0,60.0,0,1,60.0,PLAYING_XI,0,1,
 Group 8,4,Liam Dawson,England,ENG,AR,AR,0,1,0,0,17.0,0,1,17.0,PLAYING_XI,0,1,1,4,2026-02-16,1512747,0,0,0,0,Dot balls: 5 → 5 | Catches: 1 → 8 | Announced: 1 → 4
 Group 8,4,Roston Chase,West Indies,WI,AR,AR,1,0,0,0,44.0,0,1,44.0,PLAYING_XI,0,0,1,4,2026-02-19,1512755,0,0,0,0,Runs: 24 → 24 | Fours: 2 → 8 | Catches: 1 → 8 | Announced: 1 → 4
 Group 8,4,Dilshan Madushanka,Sri Lanka,SL,BOWL,BOWL,1,0,0,0,13.0,0,1,13.0,PLAYING_XI,0,0,1,4,2026-02-19,1512756,0,0,0,0,Dot balls: 7 → 7 | Economy Rate: 6.67 → 2 | Announced: 1 → 4
-Group 8,4,Mujeeb Ur Rahman,Afghanistan,AFG,BOWL,BOWL,1,0,0,0,65.0,0,1,65.0,PLAYING_XI,0,0,1,4,2026-02-19,1512757,0,0,0,0,Manual Entry
+Group 8,4,Mujeeb Ur Rahman,Afghanistan,AFG,BOWL,BOWL,1,0,0,0,65.0,0,1,65.0,PLAYING_XI,0,0,1,4,2026-02-19,1512757,0,0,0,0,DID NOT PLAY
 Group 8,4,Devon Conway,New Zealand,NZ,WK,WK,1,0,0,0,0.0,0,1,0.0,SUB,1,0,0,4,2026-02-17,1512749,0,0,0,0,DID NOT PLAY
 Group 8,4,Cooper Connolly,Australia,AUS,AR,AR,0,2,0,0,0.0,0,1,0.0,SUB,0,0,0,4,2026-02-20,1512758,0,0,0,0,DID NOT PLAY
 Group 8,4,Rehan Ahmed,England,ENG,AR,AR,0,6,0,0,0.0,0,1,0.0,SUB,0,0,0,4,2026-02-16,1512747,0,0,0,0,DID NOT PLAY

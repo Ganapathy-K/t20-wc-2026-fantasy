@@ -1,12 +1,15 @@
+import logging
 import pandas as pd
 
-from pipeline_utils import load_players_master_dataframe_from_excel, detect_player_name_column, detect_role_column, build_fpl_style_pairs_str_from_row
+from pipeline_utils import load_players_master_dataframe_from_excel, detect_player_name_column, detect_role_column, build_points_breakdown_str_from_row
+
+logger = logging.getLogger(__name__)
 from data_source_to_player_stats_dict import extract_player_match_stats
 from scoring_engine_functions import compute_player_match_fantasy_points_with_breakdown
 from build_player_name_mapping_from_sources import build_player_name_mapping_dataframe
 
 # dataframe build from match source block
-def build_match_points_dataframe_from_data_source(match_file_path_str, master_excel_path_str, debug_bool=True):
+def build_match_points_dataframe_from_data_source(match_file_path_str: str, master_excel_path_str: str, debug_bool: bool = True) -> pd.DataFrame:
 
     player_name_to_match_stats_dict = extract_player_match_stats(match_file_path_str)
 
@@ -102,39 +105,33 @@ def build_match_points_dataframe_from_data_source(match_file_path_str, master_ex
 
     # ---------- VALIDATION REPORT ----------
     if debug_bool:
-        print("\n=== MATCH VALIDATION REPORT ===")
-        print("Players scored:", len(match_points_dataframe))
-        print("Played match flag = 1:",
-                int((match_points_dataframe["played_match_flag"] == 1).sum()))
-        print("Played match flag = 0:",
-                int((match_points_dataframe["played_match_flag"] == 0).sum()))
+        logger.info("=== MATCH VALIDATION REPORT ===")
+        logger.info("Players scored: %d", len(match_points_dataframe))
+        logger.info("Played match flag = 1: %d", int((match_points_dataframe["played_match_flag"] == 1).sum()))
+        logger.info("Played match flag = 0: %d", int((match_points_dataframe["played_match_flag"] == 0).sum()))
         if "role" in match_points_dataframe.columns:
-            print("Role distribution:",
-                    match_points_dataframe["role"].value_counts().to_dict())
+            logger.info("Role distribution: %s", match_points_dataframe["role"].value_counts().to_dict())
         if "fantasy_points_int" in match_points_dataframe.columns:
-            print("Total fantasy points sum:",
-                    int(match_points_dataframe["fantasy_points_int"].sum()))
+            logger.info("Total fantasy points sum: %d", int(match_points_dataframe["fantasy_points_int"].sum()))
         if "economy_rate_points_int" in match_points_dataframe.columns:
-            print("Negative economy penalties applied:",
-                    int((match_points_dataframe["economy_rate_points_int"] < 0).sum()))
+            logger.info("Negative economy penalties applied: %d", int((match_points_dataframe["economy_rate_points_int"] < 0).sum()))
         if "strike_rate_points_int" in match_points_dataframe.columns:
-            print("Strike rate bonuses applied:", int((match_points_dataframe["strike_rate_points_int"] > 0).sum()))
+            logger.info("Strike rate bonuses applied: %d", int((match_points_dataframe["strike_rate_points_int"] > 0).sum()))
    
     # build fpl style atomic component breakdown
-    match_points_dataframe["points_pairs_str"] = match_points_dataframe.apply(build_fpl_style_pairs_str_from_row, axis=1)
+    match_points_dataframe["points_breakdown_str"] = match_points_dataframe.apply(build_points_breakdown_str_from_row, axis=1)
 
     return match_points_dataframe
 
-# standalone runner (main function)
+# standalone runner
 if __name__ == "__main__":
+    from pipeline_utils import EXCEL_WORKBOOK_PATH, JSON_FOLDER_PATH
 
-    # match_file_path_str = r"D:\Data Science\Visual Studio Code\1473511.json"
-    match_file_path_str = r"D:/Data Science/Visual Studio Code/icc_mens_t20_wc_2026_matchlogs_json/1512733.json"
-    from pipeline_utils import EXCEL_WORKBOOK_PATH
+    match_file_path_str = str(JSON_FOLDER_PATH) + "/1512733.json"
     master_excel_path_str = EXCEL_WORKBOOK_PATH
 
     df = build_match_points_dataframe_from_data_source(match_file_path_str, master_excel_path_str, debug_bool=True)
 
     output_file_name_str = "icc_mens_t20wc_2026_9teams_match_points_latest_from_json.csv"
     df.to_csv(output_file_name_str, index=False)
-    print("Wrote:", output_file_name_str, "rows:", len(df))
+    logger.info("Wrote: %s, rows: %d", output_file_name_str, len(df))

@@ -2,12 +2,14 @@ import json
 
 from pipeline_utils import get_delivery_info_from_wrapper, is_legal_delivery_bool_from_delivery
 
+BALLS_PER_OVER = 6
+
 # Dismissal kinds that credit the bowler with a wicket (whitelist approach).
 # "retired hurt" and "run out" are intentionally excluded.
 BOWLER_WICKET_KINDS = {"bowled", "caught", "lbw", "stumped", "hit wicket", "caught and bowled"}
 
 # empty player stats builder block
-def build_empty_player_match_stats():
+def build_empty_player_match_stats() -> dict:
     return {
         "runs": 0,
         "balls_faced": 0,
@@ -34,7 +36,7 @@ def build_empty_player_match_stats():
 
 
 # player stats extraction block
-def extract_player_match_stats(match_file_path_str): 
+def extract_player_match_stats(match_file_path_str: str) -> dict[str, dict]:
 
     with open(match_file_path_str, "r") as match_file:
         match_data_dict = json.load(match_file)
@@ -93,7 +95,6 @@ def extract_player_match_stats(match_file_path_str):
                 if is_legal_delivery_bool_from_delivery(delivery_info_dict):
                     bowler_stats_dict["legal_balls_bowled"] += 1
                     legal_balls_in_over_by_bowler_dict[bowler_name_str] = legal_balls_in_over_by_bowler_dict.get(bowler_name_str, 0) + 1
-                    # extras_dict = delivery_info_dict.get("extras", {})
                     is_true_dot_ball_bool = runs_dict.get("batter", 0) == 0 and extras_dict.get("wides", 0) == 0 and extras_dict.get("noballs", 0) == 0
                     if is_true_dot_ball_bool:
                         bowler_stats_dict["dot_balls"] += 1
@@ -147,7 +148,7 @@ def extract_player_match_stats(match_file_path_str):
             # maiden over detection block — requires full 6 legal deliveries (partial overs don't count)
             if over_bowler_name_str is not None:
                 legal_balls_this_over = legal_balls_in_over_by_bowler_dict.get(over_bowler_name_str, 0)
-                if over_runs_off_bat_int == 0 and over_extras_conceded_int == 0 and legal_balls_this_over >= 6:
+                if over_runs_off_bat_int == 0 and over_extras_conceded_int == 0 and legal_balls_this_over >= BALLS_PER_OVER:
                     bowler_stats_dict = player_name_to_stats_dict.setdefault(over_bowler_name_str, {})
                     bowler_stats_dict["maidens"] = bowler_stats_dict.get("maidens", 0) + 1
 
@@ -158,12 +159,13 @@ def extract_player_match_stats(match_file_path_str):
             player_stats_dict["strike_rate"] = round(player_stats_dict["runs"] * 100 / player_stats_dict["balls_faced"], 2)
 
         if player_stats_dict["legal_balls_bowled"] > 0:
-            player_stats_dict["bowling_economy"] = round(player_stats_dict["runs_conceded_by_bowler"] * 6 / player_stats_dict["legal_balls_bowled"], 2)
+            player_stats_dict["bowling_economy"] = round(player_stats_dict["runs_conceded_by_bowler"] * BALLS_PER_OVER / player_stats_dict["legal_balls_bowled"], 2)
 
     return player_name_to_stats_dict
 
 if __name__ == "__main__":
-    test_match_file_path_str = r"D:/Data Science/Visual Studio Code/icc_mens_t20_wc_2026_matchlogs_json/1512721.json"
+    from pipeline_utils import JSON_FOLDER_PATH
+    test_match_file_path_str = str(JSON_FOLDER_PATH) + "/1512721.json"
     player_name_to_stats_dict = extract_player_match_stats(test_match_file_path_str)
     print("Players extracted:", len(player_name_to_stats_dict))
     first_player_name_str = next(iter(player_name_to_stats_dict))
