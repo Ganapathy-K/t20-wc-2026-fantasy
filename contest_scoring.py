@@ -449,6 +449,12 @@ def main() -> None:
     # CSV and the schedule mapping (both use string match_ids).
     afg_match_df_raw["match_id"] = afg_match_df_raw["match_id"].astype(str)
 
+    # FIX 4: The AFG Player Points sheet uses "points_pairs_str" while the batch CSV
+    # uses "points_breakdown_str".  Without this rename the reindex below silently drops
+    # the breakdown column, causing every AFG-match player (including NZ/SA opponents)
+    # to receive "DID NOT PLAY" at the fillna step even when they scored points.
+    afg_match_df_raw = afg_match_df_raw.rename(columns={"points_pairs_str": "points_breakdown_str"})
+
     afg_round_source = pd.to_numeric(afg_match_df_raw.get("team_round"), errors="coerce") if "team_round" in afg_match_df_raw.columns else pd.Series(pd.NA, index=afg_match_df_raw.index)
     afg_match_df = afg_match_df_raw.drop(columns=["team_round"], errors="ignore")
     afg_match_df = afg_match_df.reindex(columns=match_all_teams_df.columns)

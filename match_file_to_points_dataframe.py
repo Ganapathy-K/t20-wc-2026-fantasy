@@ -1,12 +1,56 @@
 import logging
 import pandas as pd
 
-from pipeline_utils import load_players_master_dataframe_from_excel, detect_player_name_column, detect_role_column, build_points_breakdown_str_from_row
+from pipeline_utils import load_players_master_dataframe_from_excel, detect_player_name_column
 
 logger = logging.getLogger(__name__)
 from data_source_to_player_stats_dict import extract_player_match_stats
 from scoring_engine_functions import compute_player_match_fantasy_points_with_breakdown
 from build_player_name_mapping_from_sources import build_player_name_mapping_dataframe
+
+def detect_role_column(dataframe_obj: pd.DataFrame) -> str | None:
+    for column_name_str in dataframe_obj.columns:
+        normalized_column_name_str = column_name_str.lower().replace(" ", "_")
+        if normalized_column_name_str in ("role", "position", "skill"):
+            return column_name_str
+    return None
+
+def build_points_breakdown_str_from_row(player_row_series: pd.Series) -> str:
+
+    pairs = [
+        ("Runs", "runs", "runs_points_int"),
+        ("Fours", "fours", "boundary_points_int"),
+        ("Sixes", "sixes", "six_points_int"),
+        ("Runs milestone bonus", "runs", "milestone_bonus_points_int"),
+        ("Duck", "runs", "duck_points_int"),
+
+        ("Wickets", "wickets", "wicket_points_int"),
+        ("LBW/Bowled bonus", "bowled_lbw_wickets", "lbw_bowled_bonus_points_int"),
+        ("Maiden overs", "maidens", "maiden_points_int"),
+        ("3-Wicket bonus", "wickets", "wicket_haul_bonus_points_int"),
+        ("Dot balls", "dot_balls", "dot_ball_points_int"),
+
+        ("Catches", "catches", "catch_points_int"),
+        ("3-catches bonus", "catches", "catch_3_bonus_points_int"),
+        ("Stumpings", "stumpings", "stumping_points_int"),
+        ("Runout - direct", "runouts_direct", "runout_direct_points_int"),
+        ("Runout - indirect", "runouts_indirect", "runout_indirect_points_int"),
+
+        ("Strike Rate", "strike_rate", "strike_rate_points_int"),
+        ("Economy Rate", "bowling_economy", "economy_rate_points_int"),
+        ("Announced", "played_match_flag", "appearance_points_int"),
+    ]
+
+    parts = []
+
+    for label, stat_col, pts_col in pairs:
+        stat_val = player_row_series.get(stat_col, 0)
+        pts_val = player_row_series.get(pts_col, 0)
+
+        if pd.notna(pts_val) and pts_val != 0:
+            parts.append(f"{label}: {stat_val} → {int(pts_val)}")
+
+    return " | ".join(parts)
 
 # dataframe build from match source block
 def build_match_points_dataframe_from_data_source(match_file_path_str: str, master_excel_path_str: str, debug_bool: bool = True) -> pd.DataFrame:
